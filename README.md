@@ -42,7 +42,7 @@ Teams | Slack | Chatwork | Rocket Chat
 #### 体制 
 PM1名 | サーバーサイドエンジニア6名
 #### 使用技術
-C#(ASP.NET Core/Entity Framework/Unity/MagicOnion/.NET CLI) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB/ELS/Kinesis Data Firehose/Elasticsearch/ElasticCache/RDS(Aurora)/S3/Route53/Certificate Manager)| Jenkins | Git | GitLab
+C#(ASP.NET Core/Entity Framework/Unity/MagicOnion/.NET CLI) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB/ELS/Kinesis Data Firehose/Elasticsearch/ElasticCache/RDS(Aurora)/S3/Route53/Certificate Manager)| Jenkins
 #### 担当業務
 - ゲームクライアント担当のエンジニアと連携しながら、ゲームサーバーの各種APIの開発・改修・デバッグ作業を担当。
 - ゲーム用マスターデータ管理アプリの各種改修・デバッグ作業を担当。主には以下。
@@ -63,33 +63,29 @@ C#(ASP.NET Core/Entity Framework/Unity/MagicOnion/.NET CLI) | JavaScript(Nuxt.js
 PM1名 | エンジニア1名
 #### (1)医療機器管理アプリの改修【Androidアプリ】
 ##### 使用技術
-C#(Xamarin Forms) | SQLite | Git
+C#(Xamarin Forms) | SQLite
 ##### 担当業務
-- 多言語化対応
-    OSの言語設定に応じて、アプリの表示言語を自動変更する仕組みを実装（ドイツ語・スペイン語対応）。
-- クラウド通信機能の実装
-    医療データをクラウド(2)に送信するための通信処理を論理設計・実装。また、設定用のUI画面も新規作成。
+- 多言語化対応。OSの言語設定に応じて、アプリの表示言語を自動変更する仕組みを構築（ドイツ語・スペイン語対応）。
+- クラウド通信機能の実装。医療データをクラウド(2)に送信するための通信処理を実装。また、設定用の新規UIも作成。
 #### (2)医療情報管理アプリの開発(β版)[Webアプリ]
 ##### 使用技術
-PHP(Laravel) | JavaScript(JQuery) | MySQL | Docker | AWS(VPC/EC2/S3/Route53/IAM/SES/CloudWatch/SNS)| Jenkins | Git
+PHP(Laravel) | JavaScript(JQuery) | MySQL | Docker | AWS(VPC/EC2/S3/Route53/IAM/SES/CloudWatch/SNS)| Jenkins
 ##### 担当業務
 AWSの設計/構築、MVCアーキテクチャに基づいたソフトウェアの設計/実装、DB設計、テスト、ドキュメンテーションなど、基本設計以降のほぼすべての作業を担当。
 - インフラ（AWS）
     - AWS VPC内に構築したEC2インスタンスに、以下の構成でインフラを設計・構築:
         - リバースプロキシ（SSL化）、Webサーバー、DBサーバーをDockerコンテナで管理。
         - データベースはEBSボリューム上に構築。
-    - セキュリティグループ設定で、ステージング環境やSSHポートへのアクセスを社内IPアドレスに限定。
-    - AWS SESを用いて、でメール通知機能を実現。
-    - AWS CloudWatchを活用し、標準メトリクス（EC2インスタンスのCPU使用率）、カスタムメトリクス（EC2インスタンスのメモリ・EBボリュームのストレージ使用率）を監視し、    
+    - セキュリティグループの設定で、ステージング環境やSSHポートへのアクセスを社内IPアドレスに限定。
+    - AWS SESを用いて、でメール通知機能を構築。
+    - AWS CloudWatchを活用し、標準メトリクス（EC2インスタンスのCPU使用率）、カスタムメトリクス（EC2インスタンスのメモリ・EBSボリュームのストレージ使用率）を監視し、    
       閾値の超過でAWS SNSを通じてエンジニアチームに通知する仕組みを構築。
     - EC2インスタンスのCRONを用いて、S3へのデータベースの自動バックアップの仕組みを構築。また、復元用スクリプトも作成。
 - ソフトウェア
     - WebAPIを設計・実装し、(1)のAndroidアプリからの医療データ登録を実現。APIトークン認証を導入。
     - 各種画面の作成・論理実装。権限（最高管理者/病院管理者/一般ユーザー）に応じて機能を制限。
     - DB設計およびインデックスの設定。
-    - 各種脅威（XSS・CSRF・通信の盗聴・DOS攻撃・OSインジェクション・セッションハイジャック・SQLインジェクション・非正規のログイン）に対する
-      セキュリティ対策（HTMLエスケープ・CSRFトークンの利用・通信の暗号化・アクセス数のレート制限、OSコマンド無効化・2要素認証・セッションID更新・ORM利用・IPアドレス制限）を実施し、
-      実稼働環境での外部からの攻撃を未然に防止。
+    - 各種脅威（XSS・CSRF・通信の盗聴・DOS攻撃・OSインジェクション・セッションハイジャック・SQLインジェクション・非正規のログイン）に対するセキュリティ対策（HTMLエスケープ・CSRFトークンの利用・通信の暗号化・アクセス数のレート制限、OSコマンド無効化・2要素認証・セッションID更新・ORM利用・IPアドレス制限）を実施し、実稼働環境での外部からの攻撃を未然に防止。
     - Controller、Middleware層への自動テストの実施し、品質向上を図った。
     - 要求仕様書、ソフトウェア設計書、WebAPI仕様書を作成し、開発チーム内での認識統一を実現。
     - Jenkinsを活用して、以下を自動化。
@@ -112,7 +108,7 @@ PM1名 | エンジニア2名
 C(#WPF | MSTest) | SQLite
 #### 担当業務
 MVVMアーキテクチャに基づいたソフトウェアの設計・実装、試験を担当。
-- 商品スキャン、支払い手続き、レシート発行、アンケート、管理機能などの画面の作成と論理の実装（約30ページ）
+- 商品スキャン、商品選択、住所入力、支払い手続き、レシート発行、アンケート、管理機能などの各種画面の作成と論理の実装（約30ページ）
 - 印刷機・電子秤・クラウドとの通信処理を実装（※決済端末・スキャナー周りは別担当者が実装）
 - 障害調査および対応。ログを解析し、問題箇所を特定後、アプリケーション側の問題については修正を実施。外部端末の問題は、外部ベンダーへ調査・修正依頼を行い対応。
 #### 発揮したバリュー
