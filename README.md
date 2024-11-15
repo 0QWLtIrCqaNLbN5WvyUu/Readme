@@ -20,8 +20,8 @@
 ### RDB/NoSQL
 MySQL | SQLite / Redis
 ### インフラ（AWS）
-VPC | S3 | EC2 | Route53 | IAM | SES | CloudWatch | SNS
-「CloudFormation | Certificate Manager | RDS(Aurora) | Secrets Manager | ELB(ALB)」←自己学習
+- VPC | S3 | EC2 | Route53 | IAM | SES | CloudWatch | SNS
+- 自己学習→ CloudFormation | Certificate Manager | RDS(Aurora) | Secrets Manager | ELB(ALB)
 ### CI/CD
 Jenkins
 ### バージョン管理
@@ -36,15 +36,13 @@ Teams | Slack | Chatwork | Rocket Chat
 ## 主な業務経歴
 ### 有名漫画原作のカードバトルゲームのゲームサーバー改修・ゲーム用マスターデータ管理アプリの改修（2024/06~2024/12)
 #### プロジェクト概要  
-- ゲームプレイヤー同士の接続を管理し、ゲームプレイに必要な情報を処理・同期するための専用サーバーのAPI開発・改修。
+- ゲームプレイヤー同士の接続を管理し、
+  ゲームプレイに必要な情報を処理・同期するための専用サーバーのAPI開発・改修。
 - ゲーム用マスターデータの管理アプリの開発・改修。
 #### 体制 
 PM1名 | サーバーサイドエンジニア6名
 #### 使用技術
-C#(ASP.NET Core/Entity Framework/Unity/MagicOnion/.NET CLI) |  
-JavaScript(Nuxt.js/Vuetify) | MySQL | Redis |   
-Docker | AWS(VPC,EC2,ELB,ELS,Kinesis Data Firehose, Elasticsearch,ElasticCache,RDS(Aurora),S3,Route53,Certificate Manager)|   
-Jenkins | Git  
+C#(ASP.NET Core/Entity Framework/Unity/MagicOnion/.NET CLI) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB/ELS/Kinesis Data Firehose/Elasticsearch/ElasticCache/RDS(Aurora)/S3/Route53/Certificate Manager)| Jenkins | Git | GitLab
 #### 担当業務
 - ゲームクライアント担当のエンジニアと連携しながら、ゲームサーバーの各種APIの開発・改修・デバッグ作業を担当。
 - ゲーム用マスターデータ管理アプリの各種改修・デバッグ作業を担当。主には以下。
@@ -73,8 +71,7 @@ C#(Xamarin Forms) | SQLite | Git
     医療データをクラウド(2)に送信するための通信処理を論理設計・実装。また、設定用のUI画面も新規作成。
 #### (2)医療情報管理アプリの開発(β版)[Webアプリ]
 ##### 使用技術
-PHP(Laravel) | JavaScript(JQuery) | MySQL   
-Docker | AWS(VPC,EC2,S3,Route53,IAM,SES,CloudWatch,SNS)| Jenkins | Git
+PHP(Laravel) | JavaScript(JQuery) | MySQL | Docker | AWS(VPC/EC2/S3/Route53/IAM/SES/CloudWatch/SNS)| Jenkins | Git
 ##### 担当業務
 AWSの設計/構築、ソフトウェアの設計/実装、DB設計、テスト、ドキュメンテーションなど、基本設計以降のほぼすべての作業を担当。
 - インフラ（AWS）
@@ -95,13 +92,14 @@ AWSの設計/構築、ソフトウェアの設計/実装、DB設計、テスト�
       実稼働環境での外部からの攻撃を未然に防止。
     - Controller、Middleware層への自動テストの実施し、品質向上を図った。
     - 要求仕様書、ソフトウェア設計書、WebAPI仕様書を作成し、開発チーム内での認識統一を実現。
-    - Jenkinsを活用して、以下を自動化:
-          - ステージング・本番環境へのビルド、テスト、デプロイ。Gitのタグを利用してバージョン番号を付与。本番環境へのデプロイはタグ指定で管理。
+    - Jenkinsを活用して、以下を自動化。
+          - ステージング・本番環境へのビルド、テスト、デプロイ。
+          - Gitのタグを利用してバージョン番号を付与し、本番環境へのデプロイはタグ指定で管理。
           - 脆弱性診断スクリプトを組み込み、ライブラリ・Dockerコンテナイメージ・ホストの脆弱性を早期検知できる仕組みを構築。
 ##### 発揮したバリュー
 インフラの設計・構築、ソフトウェア基盤コードの設計・実装、CI/CDパイプラインの構築、
 ドキュメンテーション、ローカル開発環境の整備および手順書の作成など、ほぼすべての作業を一貫して担当。
-参画中は、ほとんど21~23時まで作業し、エンジニアリソースの限られる中、プロジェクトのリリースを完遂した。
+参画中は、ほとんど21~23時まで作業し、限られたエンジニアリソースの中、プロジェクトのリリースを完遂した。
 
 ### 郵便事業者向けのセルフレジの開発(デスクトップアプリ)(2022/04~2023/05）
 #### プロジェクト概要
@@ -119,7 +117,7 @@ MVVMアーキテクチャに基づいたアプリケーション全体のクラ�
     - 管理者用画面と関連機能の実装。
 - 通信処理の実装
     - 印刷機・電子秤・クラウドとの通信処理を実装（※決済端末・スキャナーとの通信は別担当者が実装）
--障害調査および対応
+- 障害調査および対応
     - ログを解析し、問題箇所を特定し、アプリケーション側の問題については修正を実施。
     - 外部端末の問題は、外部ベンダーへ調査・修正依頼を行い対応。
 #### 発揮したバリュー
