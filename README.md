@@ -33,6 +33,8 @@ Excel | Word
 ### コミュニケーション
 Teams | Slack | Chatwork | Rocket Chat
 
+![画像の説明](https://aws-architecture-381491958750-ap-northeast-1.s3.ap-northeast-1.amazonaws.com/ELB_202308.svg)
+
 ## 主な業務経歴
 ### 有名漫画原作のカードバトルゲームのゲームサーバー改修・ゲーム用マスターデータ管理アプリの改修（2024/06~2024/12)
 #### プロジェクト概要  
