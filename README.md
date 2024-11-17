@@ -9,7 +9,7 @@
 　　　
 ## 技術
 ### ソフトウェア（言語）
-C# (ASP.NET Core | Entity Framework) | JavaScript(Vue.js | Nuxt.js | Vuetify)
+C# (ASP.NET Core | Entity Framework) | JavaScript(Vue.js | Nuxt.js | Vuetify) | HTML/CSS
 ### インフラ（AWS）
 VPC | S3 | EC2 | Route53 | IAM | SES | CloudWatch | SNS | CloudFormation | Certificate Manager | RDS(Aurora) | Secrets Manager | ELB(ALB) | ElasticCache
 ### RDB/NoSQL
