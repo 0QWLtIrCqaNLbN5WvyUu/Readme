@@ -2,14 +2,13 @@
 新宮福太郎（シングウフクタロウ, 2024年11月17日）
 
 ## 概要
-- ASP.NET Coreを用いたWebアプリの開発が可能で、MVCアーキテクチャ/依存性の注入(DI)/SOLID原則/設計パターン(Composite/Decorator/Command/Observer/State/Strategy/Template Method
-など）を活用し、保守性を考慮した設計・実装をします。
+- ASP.NET Coreを用いたWebアプリの開発が可能で、MVCアーキテクチャ/依存性の注入(DI)/SOLID原則/各種デザインパターン(Composite/Decorator/Command/Observer/State/Template Method/Strategyなど）を活用し、保守性を考慮した設計・実装をします。
 - 公開を前提に、各種脅威（XSS/CSRF/DoS攻撃/OSインジェクション/セッションハイジャック/SQLインジェクション/通信の盗聴パスワード流出）への対策（HTMLエスケープ/CSRFトークン/通信暗号化/アクセス数のレート制限/OSコマンド不使用/2要素認証/セッションID定期更新/ORM/IP制限）を実施し、セキュリティを強化します。また、CI/CDに脆弱性診断スクリプトを組み込み、脆弱性の早期検知を実現します。
 - AWSの設計・構築が可能で、
 　　　
 ## 技術
 ### サーバーサイド（言語）
-C# (ASP.NET Core | Entity Framework) | JavaScript(Vue.js | Nuxt.js | Vuetify
+C# (ASP.NET Core | Entity Framework) | JavaScript(Vue.js | Nuxt.js | Vuetify)
 ### インフラ（AWS）
 VPC | S3 | EC2 | Route53 | IAM | SES | CloudWatch | SNS | CloudFormation | Certificate Manager | RDS(Aurora) | Secrets Manager | ELB(ALB) | ElasticCache
 ### RDB/NoSQL
