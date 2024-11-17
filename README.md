@@ -8,7 +8,7 @@
 - AWSの設計・構築が可能で、セキュリティの強化、コスト削減、可用性の向上、運用保守性の改善に必要な技術を体系的に身につけています。
 　　　
 ## 技術
-### サーバーサイド（言語）
+### ソフトウェア（言語）
 C# (ASP.NET Core | Entity Framework) | JavaScript(Vue.js | Nuxt.js | Vuetify)
 ### インフラ（AWS）
 VPC | S3 | EC2 | Route53 | IAM | SES | CloudWatch | SNS | CloudFormation | Certificate Manager | RDS(Aurora) | Secrets Manager | ELB(ALB) | ElasticCache
