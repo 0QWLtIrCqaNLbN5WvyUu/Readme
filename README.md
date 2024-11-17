@@ -2,38 +2,20 @@
 新宮福太郎（シングウフクタロウ, 2024年11月17日）
 
 ## 概要
-- ASP.NET Coreを用いてMVCアーキテクチャに基づいたWebアプリの開発が可能で、
-- 依存性の注入(DI)/SOLID原則/各種設計パターン(Composite/Decorator/Command/Observer/State/Strategy/Template Method
-など）を活用し、
-保守性を考慮した設計・実装をします。
-- サービスの公開を前提に、各種脅威（XSS・CSRF・通信の盗聴・DoS攻撃・OSインジェクション・セッションハイジャック・SQLインジェクション・非正規のログイン）への対策（HTMLエスケープ・CSRFトークン利用・通信暗号化・アクセス数のレート制限、OSコマンド無効化・2要素認証・セッションID更新・ORM利用・IPアドレス制限）を実施し、セキュリティを強化します。また、CI/CDに脆弱性診断スクリプトを組み込み、脆弱性を早期検知
-- 小規模サービスのインフラ構築、ソフトウェア設計・実装、テスト、リリース、保守・運用までを1人称で担当した経験があります。
-
-　　
+- ASP.NET Coreを用いたWebアプリの開発が可能で、MVCアーキテクチャ/依存性の注入(DI)/SOLID原則/設計パターン(Composite/Decorator/Command/Observer/State/Strategy/Template Method
+など）を活用し、保守性を考慮した設計・実装をします。
+- 公開を前提に、各種脅威（XSS/CSRF/DoS攻撃/OSインジェクション/セッションハイジャック/SQLインジェクション/通信の盗聴パスワード流出）への対策（HTMLエスケープ/CSRFトークン/通信暗号化/アクセス数のレート制限/OSコマンド不使用/2要素認証/セッションID定期更新/ORM/IP制限）を実施し、セキュリティを強化します。また、CI/CDに脆弱性診断スクリプトを組み込み、脆弱性の早期検知を実現します。
+- AWSの設計・構築が可能で、
 　　　
 ## 技術
-実業務で使用した技術を列挙しています。
-### 言語（フレームワーク・ライブラリ）
-- C#（ASP.NET Core | Entity Framework | WPF | Xamarin Forms | Windows Forms | .NET CLI | MagicOnion）
-- JavaScript（Vue.js | Nuxt.js | Vuetify | JQuery）
-- PHP（Laravel）
-- Kotlin/Java
-- HTML/CSS
+### サーバーサイド（言語）
+C# (ASP.NET Core | Entity Framework) | JavaScript(Vue.js | Nuxt.js | Vuetify
+### インフラ（AWS）
+VPC | S3 | EC2 | Route53 | IAM | SES | CloudWatch | SNS | CloudFormation | Certificate Manager | RDS(Aurora) | Secrets Manager | ELB(ALB) | ElasticCache
 ### RDB/NoSQL
 MySQL | SQLite / Redis
-### インフラ（AWS）
-- VPC | S3 | EC2 | Route53 | IAM | SES | CloudWatch | SNS
-- 自己学習→ CloudFormation | Certificate Manager | RDS(Aurora) | Secrets Manager | ELB(ALB)
-### CI/CD
-Jenkins
-### バージョン管理
-Git | GitLab | SVN
-### タスク管理
-Backlog | Jira
-### ドキュメンテーション
-Excel | Word
-### コミュニケーション
-Teams | Slack | Chatwork | Rocket Chat
+### その他
+GitLab | GitHub Actions | Circle CI | Jenkins
 
 　　
 ## AWSインフラ設計・構築に関する学習履歴
