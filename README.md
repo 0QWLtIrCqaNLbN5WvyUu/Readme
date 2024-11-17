@@ -3,9 +3,9 @@
 
 ## 概要
 - ASP.NET Coreを用いたWebアプリの開発が可能です。
-    - MVCアーキテクチャ | 依存性注入(DI) | SOLID原則 | 各種デザインパターン(Observer/State/Template Method/Strategy/Unit of Work/Null Object/Composite/Decorator/Commandなど) | 自動テスト などを活用し、保守性の高い設計・実装をします。
-    - 各種脅威（XSS | CSRF | DoS攻撃 | OSインジェクション | セッションハイジャック | SQLインジェクション | 通信の盗聴 | パスワード流出）への対策（HTMLエスケープ | CSRFトークン | 通信暗号化 | アクセス数制限 | OSコマンド不使用 | 2要素認証 | セッションID更新 | ORM | IP制限）を実施し、セキュリティを強化します。
-    - CI/CDに脆弱性診断スクリプトを組み込み、脆弱性の早期検知を実現します。
+    - MVCアーキテクチャ | 依存性注入(DI) | SOLID原則 | 各種デザインパターン(Observer/State/Template Method/Strategy/Unit of Work/Null Object/Composite/Decorator/Command など) | 自動テスト などを活用し、保守性の高い設計・実装をします。
+    - MVCアーキテクチャを活用した責務分離による構造の明確化、依存性注入（DI）を通じたモジュール間の疎結合化、SOLID原則を基盤とした設計思想の適用、Observer・State・Template Method・Strategy・Unit of Work・Null Object・Composite・Decorator・Command などのデザインパターンを適切に組み合わせた柔軟なアーキテクチャ設計、さらに自動テストを用いた品質保証を通じ、保守性の高い設計・実装をします。
+    - 各種脅威（XSS | CSRF | DoS攻撃 | OSインジェクション | セッションハイジャック | SQLインジェクション | 通信の盗聴 | パスワード流出 など）への対策（HTMLエスケープ | CSRFトークン | 通信暗号化 | アクセス数制限 | OSコマンド不使用 | 2要素認証 | セッションID更新 | ORM | IP制限 など）を実施し、セキュリティを強化します。CI/CDに脆弱性診断スクリプトを組み込み、脆弱性の早期検知を実現します。
 - AWSの設計・構築が可能で、セキュリティの強化、コスト削減、可用性の向上、運用保守性の改善に必要な技術を体系的に身につけています。
 　　　
 ## 技術
