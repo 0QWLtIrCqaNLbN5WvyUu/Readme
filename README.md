@@ -3,7 +3,7 @@
 
 ## 概要
 - ASP.NET Coreを用いたWebアプリの開発が可能です。
-    - MVCアーキテクチャ | RESTful設計 | 依存性注入(DI) | SOLID原則 | OOP設計(Factory/Singleton/Builder/Adapter/Bridge/Composite/Decorator/Facade/Command/Observer/State/Strategy/Template Method/Null Object etc…) | 自動テスト などを活用し、保守性の高い設計・実装をします。
+    - MVCアーキテクチャ | RESTful設計 | SOLID原則 | OOP設計(Adapter/Bridge/Composite/Decorator/Facade/Command/Observer/State/Strategy/Template Method/Null Object/Factory/Singleton/Builder/ etc…) | 依存性注入(DI) | 自動テスト などを活用し、保守性の高い設計・実装をします。
     - 各種脅威（XSS | CSRF | DoS攻撃 | OSインジェクション | セッションハイジャック | SQLインジェクション | 通信の盗聴 | パスワード流出 など）への対策（HTMLエスケープ | CSRFトークン | 通信暗号化 | アクセス数制限 | OSコマンド不使用 | 2要素認証 | セッションID更新 | ORM | IP制限 など）を実施し、セキュリティを強化します。CI/CDに脆弱性診断スクリプトを組み込み、脆弱性の早期検知を実現します。
 - AWSの設計・構築が可能で、セキュリティの強化、コスト削減、可用性の向上、運用保守性の改善に必要な技術を体系的に身につけています。
 　　　
