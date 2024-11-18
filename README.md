@@ -3,34 +3,14 @@
 
 ## 概要
 - ASP.NET Coreを用いたWebアプリの開発が可能です。
-    - MVCアーキテクチャ | RESTful設計 | SOLID原則 | 依存性注入(DI) | 自動テスト | OOP設計(Adapter/Bridge/Composite/Decorator/Facade/Command/Observer/State/Strategy/Template Method/Null Object/Factory/Singleton/Builder etc…) などを活用し、保守性の高い設計・実装をします。
+    - MVCアーキテクチャ | RESTful設計 | SOLID原則 | 依存性注入(DI) | 自動テスト | OOP設計(Adapter/Bridge/Composite/Decorator/Facade/Command/Observer/State/Strategy/Template Method/Null Object/Factory/Singleton/Builder etc…) | DDD などを活用し、保守性の高い設計・実装をします。
     - 各種脅威（XSS | CSRF | DoS攻撃 | OSインジェクション | セッションハイジャック | SQLインジェクション | 通信の盗聴 | パスワード流出 など）への対策（HTMLエスケープ | CSRFトークン | 通信暗号化 | アクセス数制限 | OSコマンド不使用 | 2要素認証 | セッションID更新 | ORM | IP制限 など）を実施し、セキュリティを強化します。CI/CDに脆弱性診断スクリプトを組み込み、脆弱性の早期検知を実現します。
-- AWSの設計・構築が可能で、セキュリティの強化、コスト削減、可用性の向上、運用保守性の改善を行うことができます。
+- AWSの設計・構築が可能で、セキュリティの強化（IAMポリシーの細かい設定 | セキュリティグループで許可するトラフィック・ポートを最小限に制御 | Secrets Managerによる秘匿情報を管理し、ハードコーディングを排除 | Session Manager経由に限定し、SSHポートを閉鎖 | セキュリティポリシーでえ適切なものを選ぶことによってえ通信の暗号化のレベルを上げます）、可用性の向上（ELBを異なる3つのサブネットに分散配置する、NATゲートウェイの冗長化し、アウトバウンド通信の信頼性を向上、マルチAZ環境にEC2インスタンスを配置し、ALBを活用した負荷分散と高可用性を実現、AuroraのマルチAZ構成でリーダーインスタンスを分散配置し、読み取り負荷分散と障害時の自動フェイルオーバーを実現）、運用保守性（IaC（CloudFormation）、命名規則の統一、将来枯渇しないようなIPアドレス設計など）の改善を行うことができます。
 
-- インフラの設計・構築、ソフトウェア基盤コードの設計・実装、CI/CDパイプラインの構築、ドキュメンテーション、ローカル開発環境の整備および手順書の作成など、ほぼすべての作業を一貫して担当。AWSに関しては未経験であったが、PMの補助を受けつつ、なんとか構築を完遂。参画中は、ほとんど21~23時まで作業し、限られたエンジニアリソースの中、納期を順守した。
-　　　
-## 技術
-### アプリケーション（言語）
-C# (ASP.NET Core | Entity Framework) | JavaScript(Vue.js | Nuxt.js | Vuetify) | HTML/CSS
-### インフラ（AWS）
-VPC | S3 | EC2 | Route 53 | Certificate Manager | IAM | SES | CloudWatch | SNS | CloudFormation | RDS(MySQL) | Aurora | Secrets Manager | ELB(ALB) | ElastiCache
-### RDB/NoSQL
-MySQL | SQLite / Redis
-### その他
-GitLab | GitHub Actions | CircleCI | Jenkins
 
-　　
 ## AWSインフラ設計・構築に関する学習履歴
 2024年4月より、インフラエンジニア歴17年・AWS歴8年の現役フリーランスエンジニアから、週1回ZOOMを通じてAWSのインフラ設計・構築に関するノウハウを学んでいます。主に以下のリソースについて学習しました。
 この学習を通じて、以下のような。
-### セキュリティの強化
-- ルートユーザーでのアクセスキー利用を廃止し、IAMユーザーにMFAを必須化。
-- AWSリソースへの権限付与をIAMロールで一元管理し、アクセスキー依存を回避。
-- VPCをパブリック、プロテクティド、プライベートの3層に分離し、重要リソースの保護を徹底。
-- セキュリティグループで許可するポートとトラフィックを最小限に制御。
-- 機密情報をSecrets Managerで管理し、ハードコーディングを排除。
-- EC2インスタンスへのアクセスをSession Manager経由に限定し、SSHポートを閉鎖。
-- ELB(ALB)のHTTPSリスナー活用により、通信の暗号化を強制。
 ### コスト削減
 - 非稼働時間帯のEC2インスタンス停止やSavings Plansの利用。
 - RDSリザーブドインスタンスの導入による運用コストの削減。
@@ -45,15 +25,24 @@ GitLab | GitHub Actions | CircleCI | Jenkins
 - IAMユーザグループを活用して、権限管理を簡素化。
 - VPCのサブネット設計における拡張性を考慮したアプローチ。（ex. 192.168.0.0/8を/19切り分け）
 
-　　
+
+　　　
+## 技術
+### アプリケーション（言語）
+C# (ASP.NET Core | Entity Framework) | JavaScript(Vue.js | Nuxt.js | Vuetify) | HTML/CSS
+### インフラ（AWS）
+VPC | S3 | EC2 | Route 53 | Certificate Manager | IAM | SES | CloudWatch | SNS | CloudFormation | RDS(MySQL) | Aurora | Secrets Manager | ELB(ALB) | ElastiCache
+### RDB/NoSQL
+MySQL | SQLite / Redis
+### その他
+GitLab | GitHub Actions | CircleCI | Jenkins
+
 ## 主な業務経歴
 ### 有名漫画原作のカードバトルゲームのゲームサーバー改修・ゲーム用マスターデータ管理アプリの改修（2024/06~2024/12)
 【プロジェクト概要]】 
-- ゲームプレイヤー同士の接続を管理し、
-  ゲームプレイに必要な情報を処理・同期するための専用サーバーのAPI開発・改修。
-- ゲーム用マスターデータの管理アプリの開発・改修。
+ゲームプレイヤー同士の接続を管理し、ゲームプレイに必要な情報を処理・同期するための専用サーバーのAPI開発・改修。ゲーム用マスターデータの管理アプリの開発・改修。  
 【使用技術】
-C#(ASP.NET Core/Entity Framework/Unity/MagicOnion/.NET CLI) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB/ELS/Kinesis Data Firehose/Elasticsearch/ElasticCache/RDS(Aurora)/S3/Route53/Certificate Manager)| Jenkins
+C#(ASP.NET Core/Entity Framework/Unity/MagicOnion/.NET CLI) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB(ALB)/EKS/Kinesis Data Firehose/OpenSearch/ElastiCache/RDS(Aurora)/S3/Route53/Certificate Manager)| Jenkins
 【担当業務】
 - ゲームクライアント担当のエンジニアと連携しながら、ゲームサーバーの各種APIの開発・改修・デバッグ作業を担当。
 - ゲーム用マスターデータ管理アプリの各種改修・デバッグ作業を担当。主には以下。
@@ -83,14 +72,13 @@ AWSの設計/構築、MVCアーキテクチャに基づいたソフトウェア�
         - データベースはEBSボリューム上に構築。
     - セキュリティグループの設定で、ステージング環境やSSHポートへのアクセスを社内IPアドレスに限定。
     - AWS SESを用いて、でメール通知機能を構築。
-    - AWS CloudWatchを活用し、標準メトリクス（EC2インスタンスのCPU使用率）、カスタムメトリクス（EC2インスタンスのメモリ・EBSボリュームのストレージ使用率）を監視し、    
-      閾値の超過でAWS SNSを通じてエンジニアチームに通知する仕組みを構築。
-    - EC2インスタンスのCRONを用いて、S3へのデータベースの自動バックアップの仕組みを構築。また、復元用スクリプトも作成。
+    - AWS CloudWatchを活用し、標準メトリクス（EC2インスタンスのCPU使用率）、カスタムメトリクス（EC2インスタンスのメモリ・EBSボリュームのストレージ使用率）を監視し、閾値の超過でAWS SNSを通じてエンジニアチームに通知する仕組みを構築。
+    - EC2インスタンスのcronを用いて、S3へのデータベースの自動バックアップの仕組みを構築。また、復元用スクリプトも作成。
 - ソフトウェア
     - WebAPIを設計・実装し、(1)のAndroidアプリからの医療データ登録を実現。APIトークン認証を導入。
     - 各種画面の作成・論理実装。権限（最高管理者/病院管理者/一般ユーザー）に応じて機能を制限。
     - DB設計およびインデックスの設定。
-    - 各種脅威（XSS・CSRF・通信の盗聴・DOS攻撃・OSインジェクション・セッションハイジャック・SQLインジェクション・非正規のログイン）に対するセキュリティ対策（HTMLエスケープ・CSRFトークンの利用・通信の暗号化・アクセス数のレート制限、OSコマンド無効化・2要素認証・セッションID更新・ORM利用・IPアドレス制限）を実施し、実稼働環境での外部からの攻撃を未然に防止。
+    - 各種脅威（XSS・CSRF・通信の盗聴・DoS攻撃・OSインジェクション・セッションハイジャック・SQLインジェクション・非正規のログイン）に対するセキュリティ対策（HTMLエスケープ・CSRFトークンの利用・通信の暗号化・アクセス数のレート制限、OSコマンド無効化・2要素認証・セッションID更新・ORM利用・IPアドレス制限）を実施し、実稼働環境での外部からの攻撃を未然に防止。
     - Controller、Middleware層への自動テストの実施し、品質向上を図った。
     - 要求仕様書、ソフトウェア設計書、WebAPI仕様書を作成し、開発チーム内での認識統一を実現。
     - Jenkinsを活用して、以下を自動化。
