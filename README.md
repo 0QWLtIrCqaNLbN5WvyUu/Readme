@@ -5,17 +5,17 @@
 - ASP.NET Coreを用いたWebアプリの開発が可能です。
     - MVCアーキテクチャ | RESTful設計 | SOLID原則 | 依存性注入(DI) | 自動テスト | OOP設計(Adapter/Bridge/Composite/Decorator/Facade/Command/Observer/State/Strategy/Template Method/Null Object/Factory/Singleton/Builder etc…) などを活用し、保守性の高い設計・実装をします。
     - 各種脅威（XSS | CSRF | DoS攻撃 | OSインジェクション | セッションハイジャック | SQLインジェクション | 通信の盗聴 | パスワード流出 など）への対策（HTMLエスケープ | CSRFトークン | 通信暗号化 | アクセス数制限 | OSコマンド不使用 | 2要素認証 | セッションID更新 | ORM | IP制限 など）を実施し、セキュリティを強化します。CI/CDに脆弱性診断スクリプトを組み込み、脆弱性の早期検知を実現します。
-- AWSの設計・構築が可能で、セキュリティの強化、コスト削減、可用性の向上、運用保守性の改善に必要な技術を体系的に身につけています。
+- AWSの設計・構築が可能で、セキュリティの強化、コスト削減、可用性の向上、運用保守性の改善を行うことができます。
 　　　
 ## 技術
-### ソフトウェア（言語）
+### アプリケーション（言語）
 C# (ASP.NET Core | Entity Framework) | JavaScript(Vue.js | Nuxt.js | Vuetify) | HTML/CSS
 ### インフラ（AWS）
-VPC | S3 | EC2 | Route53 | IAM | SES | CloudWatch | SNS | CloudFormation | Certificate Manager | RDS(Aurora) | Secrets Manager | ELB(ALB) | ElasticCache
+VPC | S3 | EC2 | Route 53 | Certificate Manager | IAM | SES | CloudWatch | SNS | CloudFormation | RDS(MySQL) | Aurora | Secrets Manager | ELB(ALB) | ElastiCache
 ### RDB/NoSQL
 MySQL | SQLite / Redis
 ### その他
-GitLab | GitHub Actions | Circle CI | Jenkins
+GitLab | GitHub Actions | CircleCI | Jenkins
 
 　　
 ## AWSインフラ設計・構築に関する学習履歴
@@ -38,7 +38,7 @@ GitLab | GitHub Actions | Circle CI | Jenkins
 - マルチAZ環境にEC2インスタンスを配置し、ALBを活用した負荷分散と高可用性を実現。
 - AuroraのマルチAZ構成でリーダーインスタンスを分散配置し、読み取り負荷分散と障害時の自動フェイルオーバーを実現。
 ### 運用保守性の改善
-- CloudFormationを用いたインフラのコード化とバージョン管理の導入。
+- CloudFormationを用いたインフラのコード化とバージョン管理の導入。IaC(CloudFormation)
 - リソースへのタグ付与による管理効率化。
 - IAMユーザグループを活用して、権限管理を簡素化。
 - VPCのサブネット設計における拡張性を考慮したアプローチ。（ex. 192.168.0.0/8を/19切り分け）
