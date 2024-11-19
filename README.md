@@ -2,14 +2,17 @@
 新宮福太郎（シングウフクタロウ, 2024年11月17日）
 
 ## 概要
-- ASP.NET Coreを用いたWebアプリの開発が可能です。
-    - MVCアーキテクチャ | RESTful設計 | SOLID原則 | 依存性注入(DI) | 自動テスト | OOP設計(Adapter/Bridge/Composite/Decorator/Facade/Command/Observer/State/Strategy/Template Method/Null Object/Factory/Singleton/Builder etc…) | DDD などを活用し、保守性の高い設計・実装をします。
-    - 各種脅威（XSS | CSRF | DoS攻撃 | OSインジェクション | セッションハイジャック | SQLインジェクション | 通信の盗聴 | パスワード流出 など）への対策（HTMLエスケープ | CSRFトークン | 通信暗号化 | アクセス数制限 | OSコマンド不使用 | 2要素認証 | セッションID更新 | ORM | IP制限 など）を実施し、セキュリティを強化します。
-- AWSの設計・構築が可能です。
-  - 可用性を向上させます（ELB(ALB)の負荷分散・Multi-AZへの配置、NATゲートウェイの冗長化、RDS(Aurora)のリードレプリカによる読み取り負荷分散・自動フェイルオーバーなど）。
-  - 運用保守性を高めます（IaC（CloudFormation）、命名規則の統一、将来枯渇しないようなIPアドレス設計など）。
-  - セキュリティを強化します（ELBのセキュリティポリシー最適化によるTLS暗号スイート強化、セキュリティグループで通信を最小限に制御、Secrets Managerによる秘匿情報管理、Session Managerを活用しSSHポートを閉鎖、IAMポリシーの詳細設定など）。
-　
+ASP.NET Coreを用いたWebアプリケーションを開発できます。  
+以下の設計・技術を活用し、保守性・拡張性・安全性を考慮したシステムを構築します
+- **設計・実装**：MVCアーキテクチャ | RESTful設計 | SOLID原則 | 依存性注入 (DI) | 自動テスト | OOP設計パターン(例: Observer, State, Strategy, Template Method, Factory など)
+- **セキュリティ**：XSSやCSRF、DoS攻撃、OSインジェクション、セッションハイジャック、SQLインジェクション、通信の盗聴、パスワード流出などへの脅威対策（HTMLエスケープ、CSRFトークン、通信暗号化（TLS)、リクエスト数制限、OSコマンド不使用、2要素認証、セッションID更新、ORM、IPアドレス制限 など）  
+
+AWSの設計・構築も可能です。以下を意識しています。
+- **可用性**：Multi-AZ構成のELBでの負荷分散、Multi-AZ構成のAuroraリードレプリカによる読み取り負荷分散と自動フェイルオーバー、NATゲートウェイの冗長化 など
+- **運用保守性**：IaC(CloudFormation)、命名規則の統一、将来枯渇しないIPアドレス設計 など
+- **セキュリティ**：ELBのセキュリティポリシー最適化によるTLS暗号スイート強化、Secrets Managerによる機密情報管理、Session ManagerによるSSHポート閉鎖、セキュリティグループによる通信の最小限制御、IAMポリシーによる最小権限設定 など
+
+
 ## スキルセット
 ### アプリケーション（言語）
 C# (ASP.NET Core/Entity Framework) | JavaScript(Vue.js/Nuxt.js/Vuetify) | HTML/CSS
@@ -20,20 +23,21 @@ MySQL | SQLite / Redis
 ### その他
 GitHub | GitLab | GitHub Actions | Jenkins
 
-## 主な業務経歴
-### 有名漫画原作のカードバトルゲームのゲームサーバー改修・ゲーム用マスターデータ管理アプリの改修（2024/06~2024/12)
-【プロジェクト概要]】 
-ゲームプレイヤー同士の接続を管理し、ゲームプレイに必要な情報を処理・同期するための専用サーバーのAPI開発・改修。ゲーム用マスターデータの管理アプリの開発・改修。  
-【使用技術】
-C#(ASP.NET Core/Entity Framework/Unity/MagicOnion/.NET CLI) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB(ALB)/EKS/Kinesis Data Firehose/OpenSearch/ElastiCache/RDS(Aurora)/S3/Route53/Certificate Manager)| Jenkins
-【担当業務】
-- ゲームクライアント担当のエンジニアと連携しながら、ゲームサーバーの各種APIの開発・改修・デバッグ作業を担当。
-- ゲーム用マスターデータ管理アプリの各種改修・デバッグ作業を担当。主には以下。
-    - Vuetifyを使用したフロントエンドUIの開発・改修（約20ページ）。
-    - ステージング環境から本番環境へのマスターデータ移行機能の追加。
-    - S3への画像ファイルアップロード・削除機能の追加。
-- .NET CLIを用いて、外部APIから大量データを取得して保存するバッチ処理を作成。
 
+## 主な業務経歴
+### カードバトルゲームのゲームサーバー改修・ゲーム用マスターデータ管理アプリの改修（2024/06~2024/12)
+【使用技術】  
+C#(ASP.NET Core/Entity Framework/Unity/MagicOnion/.NET CLI) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB(ALB)/EKS/Kinesis Data Firehose/OpenSearch/ElastiCache/RDS(Aurora)/S3/Route53/Certificate Manager)| Jenkins  
+【担当業務】  
+ゲームクライアント担当のエンジニアと連携しながら、ゲームサーバーの各種APIの開発・改修・デバッグ作業。  
+Nuxt.js・Vuetifyを使用したフロントエンドUIの開発・改修。  
+・ステージング環境から本番環境へのマスターデータ移行機能の追加。
+- S3への画像ファイルアップロード・削除機能の追加。
+- .NET CLIを用いて、外部APIから大量データを取得して保存するバッチ処理を作成。
+- 数万件のcsvレコードを画面で読み込むと固まる問題があったら、遅延レンダリングさせることで、解消し、UXを向上させた。
+- 全件取得でクライアント側でページネーションをしていたが、サーバー側で行うことで、、、
+- Vuetifyを使用したフロントエンドUIの開発・改修（約20ページ）。
+  
 ### 医療機器操作アプリの改修・医療情報管理アプリの開発（2023/03~2024/05）
 【プロジェクト概要】
 既存の医療用輸液ポンプを操作・管理するAndroidアプリから医療データをクラウドに集約し、    
