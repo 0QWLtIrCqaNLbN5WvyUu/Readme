@@ -4,7 +4,7 @@
 ## 概要
 - ASP.NET Coreを用いたWebアプリの開発が可能です。
     - MVCアーキテクチャ | RESTful設計 | SOLID原則 | 依存性注入(DI) | 自動テスト | OOP設計(Adapter/Bridge/Composite/Decorator/Facade/Command/Observer/State/Strategy/Template Method/Null Object/Factory/Singleton/Builder etc…) | DDD などを活用し、保守性の高い設計・実装をします。
-    - 各種脅威（XSS | CSRF | DoS攻撃 | OSインジェクション | セッションハイジャック | SQLインジェクション | 通信の盗聴 | パスワード流出 など）への対策（HTMLエスケープ | CSRFトークン | 通信暗号化 | アクセス数制限 | OSコマンド不使用 | 2要素認証 | セッションID更新 | ORM | IP制限 など）を実施し、セキュリティを強化します。CI/CDに脆弱性診断スクリプトを組み込み、脆弱性の早期検知を実現します。
+    - 各種脅威（XSS | CSRF | DoS攻撃 | OSインジェクション | セッションハイジャック | SQLインジェクション | 通信の盗聴 | パスワード流出 など）への対策（HTMLエスケープ | CSRFトークン | 通信暗号化 | アクセス数制限 | OSコマンド不使用 | 2要素認証 | セッションID更新 | ORM | IP制限 など）を実施し、セキュリティを強化します。
 - AWSの設計・構築が可能です。
   - ELB(ALB)による負荷分散、ELB(AZ)のMulti-AZへの配置、NATゲートウェイの冗長化、Auroraのリードレプリカによる読み取り負荷分散・自動フェイルオーバーなどを通じて、可用性を向上させます。
   - IaC（CloudFormation）の利用、命名規則の統一、将来枯渇しないようなIPアドレス設計などを通じて、運用保守性を高めます。
