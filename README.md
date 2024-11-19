@@ -5,37 +5,20 @@
 - ASP.NET Coreを用いたWebアプリの開発が可能です。
     - MVCアーキテクチャ | RESTful設計 | SOLID原則 | 依存性注入(DI) | 自動テスト | OOP設計(Adapter/Bridge/Composite/Decorator/Facade/Command/Observer/State/Strategy/Template Method/Null Object/Factory/Singleton/Builder etc…) | DDD などを活用し、保守性の高い設計・実装をします。
     - 各種脅威（XSS | CSRF | DoS攻撃 | OSインジェクション | セッションハイジャック | SQLインジェクション | 通信の盗聴 | パスワード流出 など）への対策（HTMLエスケープ | CSRFトークン | 通信暗号化 | アクセス数制限 | OSコマンド不使用 | 2要素認証 | セッションID更新 | ORM | IP制限 など）を実施し、セキュリティを強化します。CI/CDに脆弱性診断スクリプトを組み込み、脆弱性の早期検知を実現します。
-- AWSの設計・構築が可能で、セキュリティの強化（IAMポリシーの細かい設定 | セキュリティグループで許可するトラフィック・ポートを最小限に制御 | Secrets Managerによる秘匿情報を管理し、ハードコーディングを排除 | Session Manager経由に限定し、SSHポートを閉鎖 | セキュリティポリシーでえ適切なものを選ぶことによってえ通信の暗号化のレベルを上げます）、可用性の向上（ELBを異なる3つのサブネットに分散配置する、NATゲートウェイの冗長化し、アウトバウンド通信の信頼性を向上、マルチAZ環境にEC2インスタンスを配置し、ALBを活用した負荷分散と高可用性を実現、AuroraのマルチAZ構成でリーダーインスタンスを分散配置し、読み取り負荷分散と障害時の自動フェイルオーバーを実現）、運用保守性（IaC（CloudFormation）、命名規則の統一、将来枯渇しないようなIPアドレス設計など）の改善を行うことができます。
-
-
-## AWSインフラ設計・構築に関する学習履歴
-2024年4月より、インフラエンジニア歴17年・AWS歴8年の現役フリーランスエンジニアから、週1回ZOOMを通じてAWSのインフラ設計・構築に関するノウハウを学んでいます。主に以下のリソースについて学習しました。
-この学習を通じて、以下のような。
-### コスト削減
-- 非稼働時間帯のEC2インスタンス停止やSavings Plansの利用。
-- RDSリザーブドインスタンスの導入による運用コストの削減。
-### 可用性の向上
-- 複数AZにおけるサブネットの配置
-- NATゲートウェイの冗長化し、アウトバウンド通信の信頼性を向上。
-- マルチAZ環境にEC2インスタンスを配置し、ALBを活用した負荷分散と高可用性を実現。
-- AuroraのマルチAZ構成でリーダーインスタンスを分散配置し、読み取り負荷分散と障害時の自動フェイルオーバーを実現。
-### 運用保守性の改善
-- CloudFormationを用いたインフラのコード化とバージョン管理の導入。IaC(CloudFormation)
-- リソースへのタグ付与による管理効率化。
-- IAMユーザグループを活用して、権限管理を簡素化。
-- VPCのサブネット設計における拡張性を考慮したアプローチ。（ex. 192.168.0.0/8を/19切り分け）
-
-
-　　　
-## 技術
+- AWSの設計・構築が可能です。
+  - ELB(ALB)による負荷分散、ELB(AZ)のMulti-AZへの配置、NATゲートウェイの冗長化、Auroraのリードレプリカによる読み取り負荷分散・自動フェイルオーバーなどを通じて、可用性を向上させます。
+  - IaC（CloudFormation）の利用、命名規則の統一、将来枯渇しないようなIPアドレス設計などを通じて、運用保守性を高めます。
+  - IAMポリシーの詳細設定、セキュリティグループで許可する通信を最小限に制御、Secrets Managerによる秘匿情報、Session Managerを活用しSSHポートを閉鎖、ELBのセキュリティポリシー最適化によるTLS暗号スイート強化、IAMポリシーの詳細設定などを通じて、セキュリティを強化します。
+　
+## スキルセット
 ### アプリケーション（言語）
-C# (ASP.NET Core | Entity Framework) | JavaScript(Vue.js | Nuxt.js | Vuetify) | HTML/CSS
+C# (ASP.NET Core/Entity Framework) | JavaScript(Vue.js/Nuxt.js/Vuetify) | HTML/CSS
 ### インフラ（AWS）
-VPC | S3 | EC2 | Route 53 | Certificate Manager | IAM | SES | CloudWatch | SNS | CloudFormation | RDS(MySQL) | Aurora | Secrets Manager | ELB(ALB) | ElastiCache
+CloudFormation | RDS(MySQL) | Aurora | ELB(ALB) | ElastiCache | Secrets Manager |  VPC | S3 | EC2 | Route 53 | Certificate Manager | IAM | SES | CloudWatch | SNS
 ### RDB/NoSQL
 MySQL | SQLite / Redis
 ### その他
-GitLab | GitHub Actions | CircleCI | Jenkins
+GitHub | GitLab | GitHub Actions | Jenkins
 
 ## 主な業務経歴
 ### 有名漫画原作のカードバトルゲームのゲームサーバー改修・ゲーム用マスターデータ管理アプリの改修（2024/06~2024/12)
