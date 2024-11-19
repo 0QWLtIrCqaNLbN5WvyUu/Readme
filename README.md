@@ -6,9 +6,9 @@
     - MVCアーキテクチャ | RESTful設計 | SOLID原則 | 依存性注入(DI) | 自動テスト | OOP設計(Adapter/Bridge/Composite/Decorator/Facade/Command/Observer/State/Strategy/Template Method/Null Object/Factory/Singleton/Builder etc…) | DDD などを活用し、保守性の高い設計・実装をします。
     - 各種脅威（XSS | CSRF | DoS攻撃 | OSインジェクション | セッションハイジャック | SQLインジェクション | 通信の盗聴 | パスワード流出 など）への対策（HTMLエスケープ | CSRFトークン | 通信暗号化 | アクセス数制限 | OSコマンド不使用 | 2要素認証 | セッションID更新 | ORM | IP制限 など）を実施し、セキュリティを強化します。
 - AWSの設計・構築が可能です。
-  - ELB(ALB)による負荷分散、ELB(AZ)のMulti-AZへの配置、NATゲートウェイの冗長化、Auroraのリードレプリカによる読み取り負荷分散・自動フェイルオーバーなどを通じて、可用性を向上させます。
-  - IaC（CloudFormation）の利用、命名規則の統一、将来枯渇しないようなIPアドレス設計などを通じて、運用保守性を高めます。
-  - IAMポリシーの詳細設定、セキュリティグループで許可する通信を最小限に制御、Secrets Managerによる秘匿情報、Session Managerを活用しSSHポートを閉鎖、ELBのセキュリティポリシー最適化によるTLS暗号スイート強化、IAMポリシーの詳細設定などを通じて、セキュリティを強化します。
+  - 可用性を向上させます（ELB(ALB)の負荷分散・Multi-AZへの配置、NATゲートウェイの冗長化、RDS(Aurora)のリードレプリカによる読み取り負荷分散・自動フェイルオーバーなど）。
+  - 運用保守性を高めます（IaC（CloudFormation）、命名規則の統一、将来枯渇しないようなIPアドレス設計など）。
+  - セキュリティを強化します（ELBのセキュリティポリシー最適化によるTLS暗号スイート強化、セキュリティグループで通信を最小限に制御、Secrets Managerによる秘匿情報管理、Session Managerを活用しSSHポートを閉鎖、IAMポリシーの詳細設定など）。
 　
 ## スキルセット
 ### アプリケーション（言語）
