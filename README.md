@@ -46,7 +46,7 @@ C#(ASP.NET Core/Entity Framework/Unity/MagicOnion/.NET CLI/NUnit) | JavaScript(N
 ### 医療情報管理システムの開発・医療機器操作アプリの改修（2023年・2024年）
 既存の医療用輸液ポンプを操作・管理するAndroidアプリから医療データをクラウドに集約。医療データの情報管理を実現。  
 #### 【使用技術】
-・Webアプリケーション→PHP(Laravel) | JavaScript(JQuery) | MySQL | Docker | AWS(VPC/EC2/S3/Route53/IAM/SES/CloudWatch/SNS)| Jenkins  
+・Webアプリケーション→PHP(Laravel) | JavaScript | MySQL | Docker | AWS(VPC/EC2/S3/Route53/IAM/SES/CloudWatch/SNS)| Jenkins  
 ・Androidアプリ→C#(Xamarin Forms) | SQLite  
 #### 【担当業務1】Webアプリケーションの開発  
 AWSの設計/構築、MVCアーキテクチャに基づいたソフトウェアの設計/実装、DB設計、テスト、ドキュメンテーションなど、基本設計以降のほぼすべての作業を担当。  
