@@ -18,13 +18,13 @@ ASP.NET Coreを用いたWebアプリケーションを開発できます。
 ### アプリケーション（言語）
 C# (ASP.NET Core/Entity Framework/NUnit) | JavaScript(Vue.js/Nuxt.js/Vuetify) | HTML/CSS
 ### インフラ（AWS）
-CloudFormation | RDS(MySQL) | Aurora | ELB(ALB) | ElastiCache | Secrets Manager |  VPC | S3 | EC2 | Route 53 | Certificate Manager | IAM | SES | CloudWatch | SNS
+CloudFormation | RDS(MySQL) | Aurora | ELB(ALB) | ElastiCache | Secrets Manager | VPC | S3 | EC2 | Route 53 | Certificate Manager | IAM | SES | CloudWatch | SNS
 ### RDB/NoSQL
 MySQL | SQLite / Redis
 ### その他
 GitHub | GitLab | GitHub Actions | Jenkins
 
-  
+----------------------
 ## 主な業務経歴
 ### カードバトルゲームのゲームサーバー改修・ゲーム用マスターデータ管理アプリの改修（2024年)
 #### 【使用技術】
