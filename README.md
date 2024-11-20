@@ -22,9 +22,9 @@ ASP.NET Coreを用いたWebアプリケーションを開発できます。
 
 ## 主な業務経歴
 ### カードバトルゲームのゲームサーバー改修・ゲーム用マスターデータ管理アプリ(SPA)の改修(2024年)
-#### 【使用技術】
+**【使用技術】**  
 C#(ASP.NET Core/Entity Framework/.NET CLI/NUnit) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB(ALB)/EKS/Aurora/Kinesis Data Firehose/OpenSearch/ElastiCache(Redis Cluster)/Secrets Manager/S3/Route53/Certificate Manager)| Jenkins  
-#### 【担当業務】
+**【担当業務】**  
 ・ゲームクライアントと連携するための各種APIの設計・実装    
 ・n+1問題によりパフォーマンスを低下していた既存APIを改修  
 ・アプリ側にハードコーディングされていた秘匿情報をAWS Secrets Managerで一元管理するよう変更  
@@ -38,10 +38,10 @@ C#(ASP.NET Core/Entity Framework/.NET CLI/NUnit) | JavaScript(Nuxt.js/Vuetify) |
 ・Nuxt.js+Vuetifyを使用したフロントエンドUIの作成  
  
 ### 医療情報管理システムの開発・医療機器操作アプリの改修(2023年・2024年)
-既存の医療用輸液ポンプを操作・管理するAndroidアプリから医療データをクラウドに集約。医療データの情報管理を実現。  
-#### 【使用技術】
+既存の医療用輸液ポンプを操作・管理するAndroidアプリから医療データをクラウドに集約。医療データの情報管理を実現。    
+**【使用技術】**   
 C#(Xamarin Forms) | SQLite | PHP(Laravel) | JavaScript | MySQL | Docker | AWS(VPC/EC2/S3/Route53/IAM/SES/CloudWatch/SNS)| Jenkins  
-#### 【担当業務】
+**【担当業務】**  
 AWSの設計/構築、MVCアーキテクチャに基づいたソフトウェアの設計/実装、DB設計、テスト、ドキュメンテーションなど、基本設計以降のほぼすべての作業を担当。  
 ・AWS VPC内にEC2インスタンスを構築し、その上でリバースプロキシ（SSL対応）、Webサーバー、  
 　DBサーバーをDockerコンテナで構築。データベースはEBSボリューム上に配置    
@@ -62,9 +62,10 @@ AWSの設計/構築、MVCアーキテクチャに基づいたソフトウェア�
 ・Androidアプリの改修。多言語対応(ドイツ語・スペイン語)。クラウドと連携するためのインターフェースの設計・実装    
 
 ### 郵便事業者向けのセルフレジの開発（2022年）
-#### 【使用技術】  
+**【使用技術】**    
 C(#WPF | MSTest) | SQLite  
-#### 【担当業務】  
+**【担当業務】**    
 MVVMアーキテクチャに基づいたソフトウェアの設計・実装、DB設計、テストを担当。  
 ・決済端末、スキャナー、印刷機、電子秤などの外部機器やクラウドと連携するためのインターフェースを設計・実装   
-・障害調査および対応。ログを解析し、問題箇所を特定後、アプリケーション側の問題については修正を実施。外部端末側の問題は、外部ベンダーへ調査・修正依頼を行い対応
+・障害調査および対応。ログを解析し、問題箇所を特定後、アプリケーション側の問題については修正を実施。  
+　外部端末側の問題は、外部ベンダーへ調査・修正依頼を行い対応
