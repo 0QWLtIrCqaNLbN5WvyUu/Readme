@@ -24,8 +24,8 @@ ASP.NET Coreを用いたWebアプリケーションを開発できます。
 
 また、AWSの設計・構築も可能です。
 - **可用性**：Multi-AZ構成のELBでの負荷分散、Multi-AZ構成のAuroraリードレプリカによる読み取り負荷分散と自動フェイルオーバー、NATゲートウェイの冗長化 などを通じて、可用性を向上させます。
-- **運用保守性**：IaC(CloudFormation)、命名規則の統一、将来枯渇しないIPアドレス設計 などを通じて、運用保守性を向上させます。
-- **セキュリティ**：ELBのセキュリティポリシー最適化によるTLS暗号スイート強化、Secrets Managerによる機密情報管理、Session ManagerによるSSHポート閉鎖、セキュリティグループによる通信の最小限制御、IAMポリシーによる最小権限設定 などを通じて、セキュリティを強化します。
+- **運用保守性**：IaC(CloudFormation)、命名規則の統一、効率的なIPアドレス設計 などを通じて、運用保守性を向上させます。
+- **セキュリティ**：ELBのセキュリティポリシー最適化によるTLS暗号スイート強化、Secrets Managerによる機密情報管理、Session ManagerによるSSH不要のアクセス、セキュリティグループによる通信の最小限制御、IAMポリシーによる最小権限設定 などを通じて、セキュリティを強化します。
 
 ## スキルセット
 - **アプリケーション(言語)**：C# (ASP.NET Core/Entity Framework/NUnit) | JavaScript(Vue.js/Nuxt.js/Vuetify) | HTML/CSS
