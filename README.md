@@ -20,7 +20,6 @@ ASP.NET Coreを用いたWebアプリケーションを開発できます。
 - **RDB/NoSQL**：MySQL | SQLite / Redis
 - **その他**：GitHub | GitLab | GitHub Actions | Jenkins
 
-----------------------
 ## 主な業務経歴
 ### カードバトルゲームのゲームサーバー改修・ゲーム用マスターデータ管理アプリの改修（2024年)
 #### 【使用技術】
