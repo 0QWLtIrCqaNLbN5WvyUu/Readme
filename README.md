@@ -23,20 +23,20 @@ ASP.NET Coreを用いたWebアプリケーションを開発できます。
 ## 主な業務経歴
 ### カードバトルゲームのゲームサーバー改修・ゲーム用マスターデータ管理アプリの改修(2024年)
 #### 【使用技術】
-C#(ASP.NET Core/Entity Framework/.NET CLI/NUnit) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB(ALB)/EKS/Kinesis Data Firehose/OpenSearch/ElastiCache(Redis Cluster)/Aurora/S3/Route53/Certificate Manager)| Jenkins  
+C#(ASP.NET Core/Entity Framework/.NET CLI/NUnit) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB(ALB)/EKS/Aurora/Kinesis Data Firehose/OpenSearch/ElastiCache(Redis Cluster)/Secrets Manager/S3/Route53/Certificate Manager)| Jenkins  
   
 #### 【担当業務1】ゲームサーバーの改修  
 - ゲームクライアントと連携するための各種APIの設計・実装  
-- n+1問題によりパフォーマンスを低下していた既存APIを改修  
+- n+1問題によりパフォーマンスを低下していた既存APIを改修
+- アプリ側にハードコーディングされていた秘匿情報をAWS Secrets Managerで一元管理するよう変更
 - ElastiCache(Redis Cluster)によりマスターデータをキャッシュして、DB負荷を軽減し、パフォーマンスを向上  
 - モニタリングの強化。エラー発生時に社内チャットに自動アラートを送信し、迅速に対応できる仕組みを構築  
 - 外部APIとの連携を行うためのインターフェースを設計・実装
 
 #### 【担当業務2】マスターデータ管理アプリ(SPA)の改修  
-- ステージング環境から本番環境へのマスターデータ移行機能を追加  
 - 数万件のCSVレコードをブラウザで表示した際に生じるフリーズ問題を、遅延レンダリングを導入することで解消し、UXを向上  
 - クライアント側で実装されていたページネーションをサーバー側に移行し、データ通信量を削減  
-- S3への画像アップロード・削除機能を追加
+- ステージング環境から本番環境へのマスターデータ移行機能を追加
 - Nuxt.js+Vuetifyを使用したフロントエンドUIの作成
 
 ### 医療情報管理システムの開発・医療機器操作アプリの改修(2023年・2024年)
