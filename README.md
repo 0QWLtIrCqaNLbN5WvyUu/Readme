@@ -27,15 +27,14 @@ ASP.NET Coreを用いたWebアプリケーションを開発できます。
 - **セキュリティ**：ELBのセキュリティポリシー最適化によるTLS暗号スイート強化、Secrets Managerによる機密情報管理、Session ManagerによるSSHポート閉鎖、セキュリティグループによる通信の最小限制御、IAMポリシーによる最小権限設定 などを通じて、セキュリティを強化します。
 
 ## スキルセット
-- **アプリケーション（言語）**：C# (ASP.NET Core/Entity Framework/NUnit) | JavaScript(Vue.js/Nuxt.js/Vuetify) | HTML/CSS
-- **インフラ（AWS）**：CloudFormation | Aurora | RDS(MySQL) | ELB(ALB) | ElastiCache | Secrets Manager | VPC | S3 | EC2 | Route 53 | Certificate Manager | IAM | SES | CloudWatch | SNS
+- **アプリケーション(言語)**：C# (ASP.NET Core/Entity Framework/NUnit) | JavaScript(Vue.js/Nuxt.js/Vuetify) | HTML/CSS
+- **インフラ(AWS)**：CloudFormation | Aurora | RDS(MySQL) | ELB(ALB) | ElastiCache | Secrets Manager | VPC | S3 | EC2 | Route 53 | Certificate Manager | IAM | SES | CloudWatch | SNS
 - **RDB/NoSQL**：MySQL | SQLite / Redis
 - **その他**：GitHub | GitLab | GitHub Actions | Jenkins
 
 ## 主な業務経歴
 ### カードバトルゲームのゲームサーバー改修・ゲーム用マスターデータ管理アプリ(SPA)の改修(2024年)
-**【使用技術】**  
-C#(ASP.NET Core/Entity Framework/.NET CLI/NUnit) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB(ALB)/EKS/Aurora/Kinesis Data Firehose/OpenSearch/ElastiCache(Redis Cluster)/Secrets Manager/S3/Route53/Certificate Manager)| Jenkins  
+**【使用技術】** C#(ASP.NET Core/Entity Framework/.NET CLI/NUnit) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB(ALB)/EKS/Aurora/Kinesis Data Firehose/OpenSearch/ElastiCache(Redis Cluster)/Secrets Manager/S3/Route53/Certificate Manager)| Jenkins  
 **【担当業務】**  
 ・ゲームクライアントと連携するための各種APIの設計・実装    
 ・n+1問題によりパフォーマンスを低下していた既存APIを改修  
@@ -51,10 +50,8 @@ C#(ASP.NET Core/Entity Framework/.NET CLI/NUnit) | JavaScript(Nuxt.js/Vuetify) |
  
 ### 医療情報管理システムの開発・医療機器操作アプリの改修(2023年・2024年)
 既存の医療用輸液ポンプを操作・管理するAndroidアプリから医療データをクラウドに集約。医療データの情報管理を実現。    
-**【使用技術】**   
-C#(Xamarin Forms) | SQLite | PHP(Laravel) | JavaScript | MySQL | Docker | AWS(VPC/EC2/S3/Route53/IAM/SES/CloudWatch/SNS)| Jenkins  
-**【担当業務】**  
-AWSの設計/構築、MVCアーキテクチャに基づいたソフトウェアの設計/実装、DB設計、テスト、ドキュメンテーションなど、基本設計以降のほぼすべての作業を担当。  
+**【使用技術】** C#(Xamarin Forms) | SQLite | PHP(Laravel) | JavaScript | MySQL | Docker | AWS(VPC/EC2/S3/Route53/IAM/SES/CloudWatch/SNS)| Jenkins  
+**【担当業務】** AWSの設計/構築、MVCアーキテクチャに基づいたソフトウェアの設計/実装、DB設計、テスト、ドキュメンテーションなど、基本設計以降のほぼすべての作業を担当。  
 ・AWS VPC内にEC2インスタンスを構築し、その上でリバースプロキシ（SSL対応）、Webサーバー、  
 　DBサーバーをDockerコンテナで構築。データベースはEBSボリューム上に配置    
 ・セキュリティグループの設定で、ステージング環境やSSHポートへのアクセスを社内IPアドレスに限定    
@@ -75,9 +72,7 @@ AWSの設計/構築、MVCアーキテクチャに基づいたソフトウェア�
 　クラウドと連携するためのインターフェースの設計・実装    
 
 ### 郵便事業者向けのセルフレジの開発（2022年）
-**【使用技術】**    
-C(#WPF | MSTest) | SQLite  
-**【担当業務】**    
-MVVMアーキテクチャに基づいたソフトウェアの設計・実装、DB設計、テスト、障害調査を担当。  
+**【使用技術】** C(#WPF | MSTest) | SQLite  
+**【担当業務】** MVVMアーキテクチャに基づいたソフトウェアの設計・実装、DB設計、テスト、障害調査を担当。  
 ・各種画面の作成   
 ・決済端末、スキャナー、印刷機などの外部機器と連携するためのインターフェースを設計・実装
