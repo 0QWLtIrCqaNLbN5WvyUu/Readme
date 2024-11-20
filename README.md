@@ -16,14 +16,14 @@ ASP.NET Coreを用いたWebアプリケーションを開発できます。
 
 ## スキルセット
 - **アプリケーション（言語）**：C# (ASP.NET Core/Entity Framework/NUnit) | JavaScript(Vue.js/Nuxt.js/Vuetify) | HTML/CSS
-- **インフラ（AWS）**：CloudFormation | RDS(MySQL) | Aurora | ELB(ALB) | ElastiCache | Secrets Manager | VPC | S3 | EC2 | Route 53 | Certificate Manager | IAM | SES | CloudWatch | SNS
+- **インフラ（AWS）**：CloudFormation | Aurora | RDS(MySQL) | ELB(ALB) | ElastiCache | Secrets Manager | VPC | S3 | EC2 | Route 53 | Certificate Manager | IAM | SES | CloudWatch | SNS
 - **RDB/NoSQL**：MySQL | SQLite / Redis
 - **その他**：GitHub | GitLab | GitHub Actions | Jenkins
 
 ## 主な業務経歴
 ### カードバトルゲームのゲームサーバー改修・ゲーム用マスターデータ管理アプリの改修(2024年)
 #### 【使用技術】
-C#(ASP.NET Core/Entity Framework/Unity/MagicOnion/.NET CLI/NUnit) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB(ALB)/EKS/Kinesis Data Firehose/OpenSearch/ElastiCache(Redis Cluster)/RDS(Aurora)/S3/Route53/Certificate Manager)| Jenkins  
+C#(ASP.NET Core/Entity Framework/.NET CLI/NUnit) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB(ALB)/EKS/Kinesis Data Firehose/OpenSearch/ElastiCache(Redis Cluster)/Aurora/S3/Route53/Certificate Manager)| Jenkins  
   
 #### 【担当業務1】ゲームサーバーの改修  
 - ゲームクライアントと連携するための各種APIの設計・実装  
