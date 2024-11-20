@@ -37,6 +37,7 @@ ASP.NET Coreを用いたWebアプリケーションを開発できます。
 ### カードバトルゲームのゲームサーバー改修・ゲーム用マスターデータ管理アプリ(SPA)の改修(2024年)
 **【使用技術】** C#(ASP.NET Core/Entity Framework/.NET CLI/NUnit) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB(ALB)/EKS/Aurora/Kinesis Data Firehose/OpenSearch/ElastiCache(Redis Cluster)/Secrets Manager/S3/Route53/Certificate Manager)| Jenkins  
 **【担当業務】**  
+　　           
 ・ゲームクライアントと連携するための各種APIの設計・実装    
 ・n+1問題によりパフォーマンスを低下していた既存APIを改修  
 ・アプリ側にハードコーディングされていた秘匿情報をAWS Secrets Managerで一元管理するよう変更  
