@@ -33,7 +33,7 @@ ASP.NET Coreを用いたWebアプリケーションを開発できます。
 
 ## スキルセット
 - **アプリケーション(言語)**：C# (ASP.NET Core/Entity Framework/NUnit) | JavaScript(Vue.js/Nuxt.js/Vuetify) | HTML/CSS
-- **インフラ(AWS)**：CloudFormation | Aurora | RDS(MySQL) | ELB(ALB) | ElastiCache | Secrets Manager | VPC | S3 | EC2 | Route 53 | Certificate Manager | IAM | SES | CloudWatch | SNS
+- **インフラ(AWS)**：CloudFormation | Aurora | RDS(MySQL) | ELB(ALB) | ElastiCache(Redis Cluster) | Secrets Manager | VPC | S3 | EC2 | Route 53 | Certificate Manager | IAM | SES | CloudWatch | SNS
 - **RDB/NoSQL**：MySQL | SQLite / Redis
 - **その他**：GitHub | GitLab | GitHub Actions | Jenkins
 
@@ -43,7 +43,6 @@ ASP.NET Coreを用いたWebアプリケーションを開発できます。
 **【担当業務】**  
 ・ゲームクライアントと連携するための各種APIの設計・実装    
 ・n+1問題によりパフォーマンスを低下していた既存APIを改修  
-・アプリ側にハードコーディングされていた秘匿情報をAWS Secrets Managerで一元管理するよう変更  
 ・ElastiCache(Redis Cluster)によりマスターデータをキャッシュして、DB負荷を軽減し、パフォーマンスを向上    
 ・モニタリングの強化。エラー発生時に社内チャットに自動アラートし、迅速に対応できる仕組みを構築    
 ・外部APIとの連携を行うためのインターフェースを設計・実装  
