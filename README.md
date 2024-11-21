@@ -15,7 +15,7 @@
 あ   
 # 業務経歴書
 ## 概要
-ASP.NET Coreを用いたWebアプリケーションを開発できます。
+ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
 - **設計・実装**
   - MVCアーキテクチャ・RESTful設計を採用し、依存性注入(DI)を活用することで、保守性・拡張性を向上させます。
   - SOLID原則に従い、必要に応じて、デザインパターンを導入し、モジュール設計を最適化します（例：Observer、State、Strategy、Template Method、Factory、Composite など）。
