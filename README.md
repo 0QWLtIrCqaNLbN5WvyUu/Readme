@@ -37,7 +37,7 @@ ASP.NET Coreを用いたWebアプリケーションを開発できます。
 
 ## 主な業務経歴
 ### カードバトルゲームのゲームサーバー改修・ゲーム用マスターデータ管理アプリ(SPA)の改修(2024年)
-**【使用技術】** C#(ASP.NET Core/Entity Framework/.NET CLI/NUnit) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB(ALB)/EKS/Aurora/Kinesis Data Firehose/OpenSearch/ElastiCache(Redis Cluster)/Secrets Manager/S3/Route 53/Certificate Manager)| Jenkins  
+**【使用技術】** C#(ASP.NET Core/Entity Framework/.NET CLI/NUnit) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB(ALB)/EKS/Aurora/Kinesis Data Firehose/OpenSearch/ElastiCache(Redis Cluster)/Secrets Manager/S3/Certificate Manager/Route 53)| Jenkins  
 **【担当業務】**  
 ・ゲームクライアントと連携するための各種APIの設計・実装    
 ・n+1問題によりパフォーマンスを低下していた既存APIを改修  
@@ -52,7 +52,7 @@ ASP.NET Coreを用いたWebアプリケーションを開発できます。
  
 ### 医療情報管理システムの開発・医療機器操作アプリの改修(2023年・2024年)
 既存の医療用輸液ポンプを操作・管理するAndroidアプリから医療データをクラウドに集約。医療データの情報管理を実現。    
-**【使用技術】** C#(Xamarin Forms) | PHP(Laravel) | JavaScript | MySQL | Docker | AWS(VPC/EC2/S3/Route 53/IAM/SES/CloudWatch/SNS)| Jenkins  
+**【使用技術】** C#(Xamarin Forms) | PHP(Laravel) | JavaScript | MySQL | Docker | AWS(VPC/EC2/S3/IAM/SES/CloudWatch/SNS/Route 53)| Jenkins  
 **【担当業務】** AWSの設計/構築、MVCアーキテクチャに基づいたソフトウェアの設計/実装、DB設計、テスト、ドキュメンテーションなど、基本設計以降のほぼすべての作業を担当。  
 ・AWS VPC内にEC2インスタンスを構築し、その上でリバースプロキシ（SSL対応）、Webサーバー、  
 　DBサーバーをDockerコンテナで構築。データベースはEBSボリューム上に配置    
