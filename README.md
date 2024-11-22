@@ -43,9 +43,8 @@ ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
 ## 主な業務経歴
 ### カードバトルゲームのゲームサーバー改修・ゲーム用マスターデータ管理アプリ(SPA)の改修(2024年)
 **【使用技術】** C#(ASP.NET Core/Entity Framework/.NET CLI/NUnit) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB(ALB)/EKS/Aurora/Kinesis Data Firehose/OpenSearch/ElastiCache(Redis Cluster)/Secrets Manager/S3/Certificate Manager/Route 53)| Jenkins  
-**【担当業務】**  
-主な業務は以下。
-・ゲームクライアントと連携するための各種APIの設計・実装  
+**【担当業務】** 主な業務は以下。    
+・ゲームクライアントと連携するための各種APIの設計・実装    
 ・n+1クエリ問題によりパフォーマンスを低下していた既存APIを改修  
 ・ElastiCache(Redis Cluster)によりマスターデータをキャッシュして、  
 　DB負荷を軽減し、レスポンス速度を向上  
