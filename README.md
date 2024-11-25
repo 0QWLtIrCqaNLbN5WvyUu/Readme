@@ -31,7 +31,7 @@ ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
 - **セキュリティ**：ELBのセキュリティポリシー最適化によるTLS暗号スイート強化、Secrets Managerによる機密情報管理、Session ManagerによるSSH不要のアクセス、セキュリティグループによる通信の最小限制御、IAMポリシーによる最小権限設定 などを通じて、セキュリティを強化します。
 
 ## スキルセット
-- **アプリケーション(言語)**：C# (ASP.NET Core/Entity Framework/WPF/Windows Forms/Xamarin Forms/.NET CLI/NUnit) | JavaScript(Vue.js/Nuxt.js/Vuetify) | HTML/CSS
+- **アプリケーション(言語)**：C# (ASP.NET Core/Entity Framework/WPF/Windows Forms/Xamarin Forms/.NET CLI/NUnit/MSTest) | JavaScript(Vue.js/Nuxt.js/Vuetify) | HTML/CSS
 - **インフラ(AWS)**：CloudFormation | Aurora | RDS(MySQL) | ELB(ALB) | ElastiCache(Redis Cluster) | Secrets Manager | VPC | S3 | EC2 | Route 53 | Certificate Manager | IAM | SES | CloudWatch | SNS
 - **RDB/NoSQL**：MySQL | SQLite / Redis
 - **その他**：GitHub | GitLab | GitHub Actions | Jenkins
