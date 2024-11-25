@@ -37,7 +37,7 @@ ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
 - **その他**：GitHub | GitLab | GitHub Actions | Jenkins
 
 ## 主な業務経歴
-### カードバトルゲームのゲームサーバー改修・ゲーム用マスターデータ管理アプリ(SPA)の改修(2024年)
+### カードバトルゲームのゲームサーバー改修・ゲーム用マスターデータ管理アプリ(SPA)の改修(2024/6~2024/12)
 **【使用技術】** C#(ASP.NET Core/Entity Framework/.NET CLI/NUnit) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB(ALB)/EKS/Aurora/Kinesis Data Firehose/OpenSearch/ElastiCache(Redis Cluster)/Secrets Manager/S3/Certificate Manager/Route 53)| Jenkins  
 **【担当業務】** 主な業務は以下。   
 　  
@@ -55,7 +55,7 @@ ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
 
 
       
-### 医療情報管理システムの開発・医療機器操作アプリの改修(2023年・2024年)
+### 医療情報管理システムの開発・医療機器操作アプリの改修(2023/3~2024/5)
 既存の医療用輸液ポンプを操作・管理するAndroidアプリから医療データをクラウドに集約。医療データの情報管理を実現。    
 **【使用技術】** C#(Xamarin Forms/WPF/Windows Forms) | PHP(Laravel) | JavaScript | MySQL | Docker | AWS(VPC/EC2/S3/IAM/SES/CloudWatch/SNS/Route 53)| Jenkins  
 **【担当業務】** AWSの設計/構築、MVCアーキテクチャに基づいたソフトウェアの設計/実装、DB設計、テスト、ドキュメンテーションなど、基本設計以降のほぼすべての作業を担当。  
@@ -77,7 +77,7 @@ ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
 ・要求仕様書・ソフトウェア設計書・WebAPI仕様書を作成し、開発チーム内での認識統一を実現    
 ・Androidアプリ、デスクトップアプリの改修。主に、多言語対応(ドイツ語・スペイン語)
 
-### 郵便事業者向けのPOSシステムの開発(2022年)
+### 郵便事業者向けのPOSシステムの開発(2022/3~2023/2)
 **【使用技術】** C(#WPF | MSTest) | SQLite  
 **【担当業務】** MVVMアーキテクチャに基づいたソフトウェアの設計・実装、DB設計、テスト、障害調査を担当。  
 ・各種画面の設計・実装（約30ページ）  
