@@ -56,7 +56,8 @@ ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
 　エラー率の削減と作業時間の短縮を実現  
 ・Nuxt.js+Vuetifyを使用したフロントエンドUIの設計・実装  
 
-  
+
+      
 ### 医療情報管理システムの開発・医療機器操作アプリの改修(2023/3~2024/5)
 既存の医療用輸液ポンプを操作・管理するAndroidアプリから医療データをクラウドに集約。医療データの情報管理を実現。    
 **【使用技術】** C#(Xamarin Forms) | PHP(Laravel) | JavaScript | MySQL | Docker | AWS(VPC/EC2/S3/IAM/SES/CloudWatch/SNS/Route 53)| Jenkins  
