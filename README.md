@@ -35,7 +35,7 @@ ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
 - **セキュリティ**：ELBのセキュリティポリシー最適化によるTLS暗号スイート強化、Secrets Managerによる機密情報管理、Session ManagerによるSSH不要のアクセス、セキュリティグループによる通信の最小限制御、IAMポリシーによる最小権限設定 などを通じて、セキュリティを強化します。
 
 ## スキルセット
-- **アプリケーション(言語)**：C# (ASP.NET Core/Entity Framework/NUnit) | JavaScript(Vue.js/Nuxt.js/Vuetify) | HTML/CSS
+- **アプリケーション(言語)**：C# (ASP.NET Core/Entity Framework/WPF/Windows Forms/Xamarin Forms/.NET CLI/NUnit) | JavaScript(Vue.js/Nuxt.js/Vuetify) | HTML/CSS
 - **インフラ(AWS)**：CloudFormation | Aurora | RDS(MySQL) | ELB(ALB) | ElastiCache(Redis Cluster) | Secrets Manager | VPC | S3 | EC2 | Route 53 | Certificate Manager | IAM | SES | CloudWatch | SNS
 - **RDB/NoSQL**：MySQL | SQLite / Redis
 - **その他**：GitHub | GitLab | GitHub Actions | Jenkins
@@ -60,7 +60,7 @@ ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
       
 ### 医療情報管理システムの開発・医療機器操作アプリの改修(2023/3~2024/5)
 既存の医療用輸液ポンプを操作・管理するAndroidアプリから医療データをクラウドに集約。医療データの情報管理を実現。    
-**【使用技術】** C#(Xamarin Forms) | PHP(Laravel) | JavaScript | MySQL | Docker | AWS(VPC/EC2/S3/IAM/SES/CloudWatch/SNS/Route 53)| Jenkins  
+**【使用技術】** C#(Xamarin Forms/WPF/Windows Forms) | PHP(Laravel) | JavaScript | MySQL | Docker | AWS(VPC/EC2/S3/IAM/SES/CloudWatch/SNS/Route 53)| Jenkins  
 **【担当業務】** AWSの設計/構築、MVCアーキテクチャに基づいたソフトウェアの設計/実装、DB設計、テスト、ドキュメンテーションなど、基本設計以降のほぼすべての作業を担当。  
 ・AWS VPC内にEC2インスタンスを構築し、その上でリバースプロキシ（SSL対応）、Webサーバー、  
 　DBサーバーをDockerコンテナで構築。データベースはEBSボリューム上に配置    
@@ -78,7 +78,7 @@ ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
 　通信の盗聴、パスワード流出などへの脅威対策（HTMLエスケープ、CSRFトークン、通信暗号化（TLS)、    
 　レートリミット、OSコマンド不使用、2要素認証、セッションID更新、ORM、IPアドレス制限 など）を実施    
 ・要求仕様書・ソフトウェア設計書・WebAPI仕様書を作成し、開発チーム内での認識統一を実現    
-・Androidアプリの改修。多言語対応(ドイツ語・スペイン語)。クラウドと連携するためのインターフェースの設計・実装    
+・Androidアプリ、デスクトップアプリの改修。主に、多言語対応(ドイツ語・スペイン語)
 
 ### 郵便事業者向けのセルフレジの開発(2022/3~2023/2)
 **【使用技術】** C(#WPF | MSTest) | SQLite  
