@@ -25,6 +25,7 @@ ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
 ## 主な業務経歴
 ### カードバトルゲームのゲームサーバー改修・ゲーム用マスターデータ管理アプリ(SPA)の改修(2024/6~2024/12)
 **【使用技術】** C#(ASP.NET Core/Entity Framework/.NET CLI/NUnit) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB(ALB)/EKS/Aurora/Kinesis Data Firehose/OpenSearch/ElastiCache(Redis Cluster)/Secrets Manager/S3/Certificate Manager/Route 53)| Jenkins  
+**【体制】** PM1名・エンジニア5名  
 **【担当業務】** 主な業務は以下。   
 ・ゲームクライアントと連携するための各種APIの設計・実装    
 ・n+1クエリ問題によりパフォーマンスを低下していた既存APIを改修  
@@ -43,6 +44,7 @@ ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
 ### 医療情報管理システムの開発・医療機器操作アプリの改修(2023/3~2024/5)
 既存の医療用輸液ポンプを操作・管理するAndroidアプリから医療データをクラウドに集約。医療データの情報管理を実現。    
 **【使用技術】** C#(Xamarin Forms/WPF/Windows Forms) | PHP(Laravel) | JavaScript | MySQL | Docker | AWS(VPC/EC2/S3/IAM/SES/CloudWatch/SNS/Route 53)| Jenkins  
+**【体制】** PM1名・エンジニア1名  
 **【担当業務】** AWSの設計/構築、MVCアーキテクチャに基づいたソフトウェアの設計/実装、DB設計、テスト、ドキュメンテーションなど、基本設計以降のほぼすべての作業を担当。  
 ・AWS VPC内にEC2インスタンスを構築し、その上でリバースプロキシ（SSL対応）、Webサーバー、  
 　DBサーバーをDockerコンテナで構築。データベースはEBSボリューム上に配置    
@@ -64,6 +66,7 @@ ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
 
 ### 郵便事業者向けのPOSシステムの開発(2022/3~2023/2)
 **【使用技術】** C(#WPF | MSTest) | SQLite  
+**【体制】** PM1名・エンジニア2名  
 **【担当業務】** MVVMアーキテクチャに基づいたソフトウェアの設計・実装、DB設計、テスト、障害調査を担当。  
 ・各種画面の設計・実装（約30ページ）  
 ・決済端末、スキャナー、印刷機、電子秤などの外部機器やクラウドと連携するためのインターフェースを設計・実装    
