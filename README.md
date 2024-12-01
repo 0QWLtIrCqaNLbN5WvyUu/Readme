@@ -46,7 +46,7 @@ ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
 **【使用技術】** C#(Xamarin Forms/WPF/Windows Forms) | PHP(Laravel) | JavaScript | MySQL | Docker | AWS(VPC/EC2/S3/IAM/SES/CloudWatch/SNS/Route 53)| Jenkins  
 **【体制】** PM1名・エンジニア1名  
 **【担当業務】** AWSの設計/構築、MVCアーキテクチャに基づいたソフトウェアの設計/実装、DB設計、テスト、ドキュメンテーションなど、基本設計以降のほぼすべての作業を担当。  
-・AWS VPC内にEC2インスタンスを構築し、その上でリバースプロキシ（SSL対応）、Webサーバー、  
+・VPC内にEC2インスタンスを構築し、その上でリバースプロキシ（SSL対応）、Webサーバー、  
 　DBサーバーをDockerコンテナで構築。データベースはEBSボリューム上に配置    
 ・セキュリティグループの設定で、ステージング環境やSSHポートへのアクセスを社内IPアドレスに限定    
 ・SESによるメール配信基盤の構築    
