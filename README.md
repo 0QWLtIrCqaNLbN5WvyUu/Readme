@@ -1,3 +1,14 @@
+- .NET Framework4.8 / .NET 8
+- JavaScript
+- xUnit
+- Web App Service
+- SQL Server
+- Azure Storage
+- Azure Functions
+- Azure OpenAI
+- Azure Cache for Redis
+- Azure Virtual Machines
+
 # 業務経歴書
 ## 概要
 ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
@@ -17,14 +28,14 @@ ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
 - **セキュリティ**：ELBのセキュリティポリシー最適化によるTLS暗号スイート強化、Secrets Managerによる機密情報管理、Session ManagerによるSSH不要のアクセス、セキュリティグループによる通信の最小限制御、IAMポリシーによる最小権限設定 などを通じて、セキュリティを強化します。
 
 ## スキルセット
-- **アプリケーション(言語)**：C# (ASP.NET Core/Entity Framework/WPF/Windows Forms/Xamarin Forms/.NET CLI/NUnit/MSTest) | JavaScript(Vue.js/Nuxt.js/Vuetify) | HTML/CSS
+- **アプリケーション(言語)**：C# (ASP.NET Core/Entity Framework/WPF/Windows Forms/Xamarin Forms/.NET CLI/xUnit/MSTest) | JavaScript(Vue.js/Nuxt.js/Vuetify) | HTML/CSS
 - **インフラ(AWS)**：CloudFormation | Aurora | RDS(MySQL) | ELB(ALB) | ElastiCache(Redis Cluster) | Secrets Manager | VPC | S3 | EC2 | Route 53 | Certificate Manager | IAM | SES | CloudWatch | SNS
 - **RDB/NoSQL**：MySQL | SQLite / Redis
 - **その他**：GitHub | GitLab | GitHub Actions | Jenkins
 
 ## 主な業務経歴
 ### カードバトルゲームのゲームサーバー改修・ゲーム用マスターデータ管理アプリ(SPA)の改修(2024)
-**【使用技術】** C#(ASP.NET Core/Entity Framework/.NET CLI/NUnit) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB(ALB)/EKS/Aurora/Kinesis Data Firehose/OpenSearch/ElastiCache(Redis Cluster)/Secrets Manager/S3/Certificate Manager/Route 53)| Jenkins  
+**【使用技術】** C#(ASP.NET Core/Entity Framework/.NET CLI/xUnit) | JavaScript(Nuxt.js/Vuetify) | MySQL | Redis | Docker | AWS(VPC/EC2/ELB(ALB)/EKS/Aurora/Kinesis Data Firehose/OpenSearch/ElastiCache(Redis Cluster)/Secrets Manager/S3/Certificate Manager/Route 53)| Jenkins  
 **【体制】** PM1名・エンジニア5名  
 **【担当業務】** 主な業務は以下。   
 ・ゲームクライアントと連携するための各種APIの設計・実装    
