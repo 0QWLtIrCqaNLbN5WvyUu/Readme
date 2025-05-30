@@ -9,23 +9,22 @@
 - Azure Cache for Redis
 - Azure Virtual Machines
 
-    SQLインジェクション Directory traversal クロスサイトスクリプティング OS アクセス制御  
-順位	脅威カテゴリ	説明
-A01:2021	Broken Access Control（アクセス制御の不備）	権限のない操作が可能になる問題。例：管理ページへアクセス、他人のデータを見るなど
-A02:2021	Cryptographic Failures（暗号化の失敗）	通信の暗号化不足、機密情報の平文保存など。旧称：機密データの露出
-A03:2021	Injection（インジェクション）	SQLインジェクション、OSコマンドインジェクションなど
-A04:2021	Insecure Design（安全でない設計）	設計段階でのセキュリティ欠如。入力検証や認可がそもそも設計されていない
-A05:2021	Security Misconfiguration（設定ミス）	不適切なCORS設定、デフォルトパスワード放置、エラーメッセージの詳細漏えいなど
-A06:2021	Vulnerable and Outdated Components（脆弱なコンポーネントの使用）	古いライブラリや脆弱性のあるパッケージを使い続けている状態
-A07:2021	Identification and Authentication Failures（認証・識別の失敗）	パスワードの弱さ、多要素認証の未実装、セッション管理の甘さなど
-A08:2021	Software and Data Integrity Failures（ソフトウェア・データの整合性失敗）	信頼できないソースからの更新、署名検証不足、CI/CDの検証不備など
-A09:2021	Security Logging and Monitoring Failures（監視・ロギングの失敗）	異常検出不能、監査ログなし、不正アクセスの見逃しなど
-A10:2021	Server-Side Request Forgery (SSRF)	サーバーが内部のリソースにアクセスさせられる攻撃（例：メタデータURLへのアクセス）
+- Web App Service	AWS Elastic Beanstalk または Amazon ECS / Fargate / EC2 + ALB
+SQL Server	Amazon RDS for SQL Server
+Azure Storage	Amazon S3（Blob Storage）
+Amazon EBS / EFS（ディスク/ファイル共有用途）
+Azure Functions	AWS Lambda
+Azure OpenAI	Amazon Bedrock（Claude, Titan, etc.）
+または SageMaker + OpenAI API（統合で実現）
+Azure Cache for Redis	Amazon ElastiCache for Redis
+Azure Virtual Machines	Amazon EC2（Elastic Compute Cloud）
 
 
 
 # 業務経歴書
 ## 概要
+AWSの設計・構築・保守が可能です。
+
 ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
 - **設計・実装**
   - MVCやMVVM、RESTful設計、TDD、DDDなどの知見を活用することで、保守性・拡張性を向上させます。
@@ -39,15 +38,9 @@ ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
   - 自動テストを活用して、ユニットテスト、結合テストを実施することで、品質を保証します。また、CI/CDパイプラインと連携することで、コード変更時に自動的にテストを実行し、開発の各段階での不具合の混入を未然に防ぎます。
 
 
-また、AWSの設計・構築も可能です。
 
-- **セキュリティ**：
-
-
-
-## AWSインフラ設計・構築に関する学習履歴Add commentMore actions
-2024年4月より、インフラエンジニア歴17年・AWS歴8年の現役フリーランスエンジニアから、週1回ZOOMを通じてAWSのインフラ設計・構築に関するノウハウを学んでいます。主に以下のリソースについて学習しました。
-この学習を通じて、以下のような。
+## AWSインフラ設計・構築で意識していること
+セキュリティの強化、コスト削減、可用性の向上、運用保守性の改善を行うことができます。
 ### セキュリティの強化
 - ELBのセキュリティポリシー最適化によるTLS暗号スイート強化
 - Secrets Managerによる機密情報管理
@@ -55,13 +48,23 @@ ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
 - セキュリティグループによる通信の最小限制御
 - IAMポリシーによる最小権限設定
 
-- ルートユーザーでのアクセスキー利用を廃止し、IAMユーザーにMFAを必須化。
-- AWSリソースへの権限付与をIAMロールで一元管理し、アクセスキー依存を回避。
-- VPCをパブリック、プロテクティド、プライベートの3層に分離し、重要リソースの保護を徹底。
-- セキュリティグループで許可するポートとトラフィックを最小限に制御。
-- 機密情報をSecrets Managerで管理し、ハードコーディングを排除。
+
+
+
 - EC2インスタンスへのアクセスをSession Manager経由に限定し、SSHポートを閉鎖。
 - ELB(ALB)のHTTPSリスナー活用により、通信の暗号化を強制。
+
+
+
+
+- HSTSを使用して、通信の暗号化を強制
+- ELBのセキュリティポリシー最適化によるTLS暗号スイート強
+- 機密情報をSecrets Managerで管理し、ハードコーディングを排除。
+- セキュリティグループで許可するポートとトラフィックを最小限に制御。
+- EC2インスタンスへのアクセスをSession Manager経由に限定し、SSHポートを閉鎖
+- IAMポリシーによる最小権限設定
+- ルートユーザーでのアクセスキー利用を廃止し、IAMユーザーにMFAを必須化。
+
 ### コスト削減
 - 非稼働時間帯のEC2インスタンス停止やSavings Plansの利用。
 - RDSリザーブドインスタンスの導入による運用コストの削減。
@@ -85,12 +88,23 @@ ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
 - VPCのサブネット設計における拡張性を考慮したアプローチ。（ex. 192.168.0.0/8を/19切り分け）Add comment
 
 
+スキルセットを盛って書いた場合、そこを質問されたら
+ここまでは分かります。それ以上はあんまり詳しくないので、
+実務で必要な場合は、公式ドキュメントとかこういのをみてキャッチアップして対応します。
+
+Cloudformationは多少使った程度で、経験が長いのはTraformの方なんです。
+Traformの方について聞いていただければお答えします。みたいな感じで、苦手な方を聞かれたら得意な方に質問を誘導する。
+
+キャッチアップして対応しますみたいな、若干苦手な空気は出していいです。
+そうすると、面談している方もできないことを聞いても仕方ないので、詳しくないことは知りたくないので、
+できることを知りたい、わかることを知りたいので、誘導された方に質問が行きます。
+
+分かった風に答えなくていい。マッチする度合いを見ている。
 
 
 ## スキルセット
-- **アプリケーション(言語)**：C# (ASP.NET Core/Entity Framework/WPF/Windows Forms/Xamarin Forms/.NET CLI/xUnit/MSTest) | JavaScript(Vue.js/Nuxt.js/Vuetify) | HTML/CSS
-- **インフラ(AWS)**：CloudFormation | Aurora | RDS(MySQL) | ELB(ALB) | ElastiCache(Redis Cluster) | Secrets Manager | VPC | S3 | EC2 | Route 53 | Certificate Manager | IAM | SES | CloudWatch | SNS
-- **RDB/NoSQL**：MySQL | SQLite / Redis
+- **クラウド(AWS)**：CloudFormation | Aurora | RDS(MySQL) | Aurora Serverless V2| ELB(ALB) | ElastiCache(Redis) | Secrets Manager | VPC | S3 | EC2 | Route 53 | Certificate Manager | IAM | SES | CloudWatch | SNS
+- **アプリケーション(言語)**：C# (ASP.NET Core) | PHP (Laravel) | Java | Kotlin | JavaScript(Vue.js/Nuxt.js) | HTML/CSS
 - **その他**：GitHub | GitLab | GitHub Actions | Jenkins
 
 ## 主な業務経歴
