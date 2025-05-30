@@ -48,12 +48,9 @@ ASP.NET Coreを用いたWebアプリケーションの開発が可能です。
 
 
 
-- EC2インスタンスへのアクセスをSession Manager経由に限定し、SSHポートを閉鎖。
-- ELB(ALB)のHTTPSリスナー活用により、通信の暗号化を強制。
-
-
 //// もう少し深いことを書く
 
+- WAFにより、XSS、CSRF、SQLi、OSコマンドインジェクション、DoS攻撃などへの対策を実施
 - HSTSを使用して、通信の暗号化を強制
 - ELBのセキュリティポリシーを最適化し、TLSプロトコルと暗号スイートの強化を実施
 - 機密情報をSecrets Managerで管理し、ハードコーディングを排除。
@@ -123,7 +120,7 @@ Traformの方について聞いていただければお答えします。みた�
 
 
 ## スキルセット
-- **クラウド(AWS)**：CloudFormation | Aurora | RDS(MySQL) | Aurora Serverless V2| ELB(ALB) | ElastiCache(Redis) | Secrets Manager | VPC | S3 | EC2 | Route 53 | Certificate Manager | IAM | SES | CloudWatch | SNS
+- **クラウド(AWS)**：CloudFormation | Aurora | RDS(MySQL) | Aurora Serverless V2| ELB(ALB) | ElastiCache(Redis) | Secrets Manager | VPC | S3 | EC2 | Route 53 | Certificate Manager | IAM | SES | CloudWatch | SNS | WAF
 - **アプリケーション(言語)**：C# (ASP.NET Core) | PHP (Laravel) | Java | Kotlin | JavaScript(Vue.js/Nuxt.js) | HTML/CSS
 - **その他**：GitHub | GitLab | GitHub Actions | Jenkins
 
