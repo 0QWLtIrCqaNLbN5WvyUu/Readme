@@ -60,8 +60,8 @@ AWSの設計・構築が可能です。
 ### 会計システムにおけるクラウド設計・API開発（2025）
 **【使用技術】** 
 AWS(CloudFront/WAF/ALB/EC2 Auto Scailing/Aurora/ElastiCache(Redis)/EventBridge/Lambda/S3/Athena/VPC/EC2/IAM/ACM/Route 53) | OpenAI API | SendGrid |
-C#(ASP.NET Core/Entity Framework/xUnit) | JavaScript | Jenkins 
-** [業務] **
+C#(ASP.NET Core/Entity Framework/xUnit) | JavaScript | Jenkins  
+**【業務】**
 - JMeterを用いた負荷試験を実施し、運用開始1年後を想定して、DBに大量のテストデータを用意した上で、ピーク時にシステムが正常応答・スケーリングすることを検証し、可用性を担保
 - ElastiCache(Redis)によるセッション認証基盤を設計・構築し、発行・検証・失効までのセッション管理をアプリケーション側に実装
 - CloudFront → ALB → EC2 → Aurora/ElastiCache/S3 に至るシステム構成に対し、障害テストを実施。各サービスの停止・タイムアウト時における検知・通知・復旧フローが想定通り機能するかを確認し、運用体制の信頼性を検証
@@ -73,7 +73,7 @@ C#(ASP.NET Core/Entity Framework/xUnit) | JavaScript | Jenkins
 ### ゲームサーバーおよびマスターデータ管理アプリのクラウド設計・バックエンド開発(2024)
 **【使用技術】** 
 AWS(ECS/CloudFront/WAF/ALB/Aurora/ElastiCache(Redis)/Kinesis Data Firehose/OpenSearch/Secrets Manager/S3/API Gateway/Lambda/CloudWatch/SNS/ACM/Route 53) |
-C(ASP.NET Core/Entity Framework/.NET CLI/xUnit) | JavaScript(Nuxt.js/Vuetify) | Docker | Jenkins
+C(ASP.NET Core/Entity Framework/.NET CLI/xUnit) | JavaScript(Nuxt.js/Vuetify) | Docker | Jenkins  
 **【業務】**
 - 大量アクセスへの耐性強化とDBのスケーラビリティ確保を目的に、ユーザーIDによる水平シャーディングを設計。データを複数の Aurora クラスターへ分散し、アプリケーション側では接続先DBをユーザーごとに動的に切り替えるシャーディングロジックを実装
 - ElastiCache（Redis Cluster）によるキャッシュ層を設計・構築し、マスターデータをキャッシュ対象として運用。アプリケーション側でもキャッシュ制御ロジックを実装し、DB負荷軽減とレスポンス高速化を実現。
@@ -86,7 +86,8 @@ C(ASP.NET Core/Entity Framework/.NET CLI/xUnit) | JavaScript(Nuxt.js/Vuetify) | 
 既存の医療用輸液ポンプを操作・管理するAndroidアプリから医療データをクラウドに集約。医療データの情報管理を実現。    
 **【使用技術】** 
 AWS(VPC/ALB/EC2/S3/IAM/SES/CloudWatch/SNS/Route 53/ACM)
-C#(ASP.NET Core | Xamarin Forms | WPF) | PHP(Laravel) | Java | Kotlin | JavaScript | MySQL | Docker | Jenkins  
+C#(ASP.NET Core | Xamarin Forms | WPF) | PHP(Laravel) | Java | Kotlin | JavaScript | MySQL | Docker | Jenkins
+
 **【業務】**
 - AWSの設計/構築、ソフトウェアの設計/実装、DB設計、テスト、ドキュメンテーションなど、ほぼすべての作業を担当  
 - CloudWatch を活用し、標準メトリクス（EC2 の CPU 使用率）およびカスタムメトリクス（メモリ使用率や EBS ボリュームのストレージ使用率）を監視。いずれかの閾値を超過した際に SNS 経由で通知が届く仕組みを構築
