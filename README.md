@@ -58,7 +58,7 @@ AWSの設計・構築が可能です。
 
 ## 主な業務経歴
 ### 会計システムにおけるクラウド設計・API開発（2025）
-**【使用技術】** 
+**【使用技術】**  
 AWS(CloudFront/WAF/ALB/EC2 Auto Scailing/Aurora/ElastiCache(Redis)/EventBridge/Lambda/S3/Athena/VPC/EC2/IAM/ACM/Route 53) | OpenAI API | SendGrid |
 C#(ASP.NET Core/Entity Framework/xUnit) | JavaScript | Jenkins  
 **【業務】**
@@ -71,7 +71,7 @@ C#(ASP.NET Core/Entity Framework/xUnit) | JavaScript | Jenkins
 - アプリケーションの認証・異常系処理・バリデーションの各設計を見直し、リファクタリングにより保守性を向上
 
 ### ゲームサーバーおよびマスターデータ管理アプリのクラウド設計・バックエンド開発(2024)
-**【使用技術】** 
+**【使用技術】**  
 AWS(ECS/CloudFront/WAF/ALB/Aurora/ElastiCache(Redis)/Kinesis Data Firehose/OpenSearch/Secrets Manager/S3/API Gateway/Lambda/CloudWatch/SNS/ACM/Route 53) |
 C(ASP.NET Core/Entity Framework/.NET CLI/xUnit) | JavaScript(Nuxt.js/Vuetify) | Docker | Jenkins  
 **【業務】**
@@ -84,7 +84,7 @@ C(ASP.NET Core/Entity Framework/.NET CLI/xUnit) | JavaScript(Nuxt.js/Vuetify) | 
 
 ### 医療情報管理システムの開発・医療機器操作アプリの改修(2023・2024)
 既存の医療用輸液ポンプを操作・管理するAndroidアプリから医療データをクラウドに集約。医療データの情報管理を実現。    
-**【使用技術】** 
+**【使用技術】**   
 AWS(VPC/ALB/EC2/S3/IAM/SES/CloudWatch/SNS/Route 53/ACM)
 C#(ASP.NET Core | Xamarin Forms | WPF) | PHP(Laravel) | Java | Kotlin | JavaScript | MySQL | Docker | Jenkins
 
@@ -97,7 +97,7 @@ C#(ASP.NET Core | Xamarin Forms | WPF) | PHP(Laravel) | Java | Kotlin | JavaScri
 - 国際化対応の設計・開発。ユーザーの言語情報をURLパラメータで保持し、言語に応じた画面表示を動的に切り替える仕組みを実装。翻訳文言はExcelで管理し、ビルド時に言語別のリソースファイルへ変換し、アセンブリに組み込むことでアプリ内からの参照を高速化。翻訳担当者は Excel 上で作業し、開発者は翻訳ファイルを差し替えるだけで対応可能となり、多言語対応の運用効率が大幅に向上した
 
 ### 郵便事業者向けのPOSシステムの開発(2022)
-**【使用技術】** 
+**【使用技術】**  
 C(#WPF | MSTest) | SQLite  
 **【担当業務】**
 - 業務アプリケーションの各画面のUI設計・機能実装を担当
