@@ -77,17 +77,16 @@ C(ASP.NET Core/Entity Framework/.NET CLI/xUnit) | JavaScript(Nuxt.js/Vuetify) | 
 **【業務】**
 - 大量アクセスへの耐性強化とDBのスケーラビリティ確保を目的に、ユーザーIDによる水平シャーディングを設計。データを複数の Aurora クラスターへ分散し、アプリケーション側では接続先DBをユーザーごとに動的に切り替えるシャーディングロジックを実装
 - ElastiCache（Redis Cluster）によるキャッシュ層を設計・構築し、マスターデータをキャッシュ対象として運用。アプリケーション側でもキャッシュ制御ロジックを実装し、DB負荷軽減とレスポンス高速化を実現。
-- CloudWatch + SNS + Lambda を連携させ、社内チャットへ自動通知を送信し、インフラ・アプリケーションの異常を即時共有可能にする仕組みを構築。
+- CloudWatch + SNS + Lambda を連携させ、インフラ・アプリケーションの異常を社内チャットへ自動送信し、即時共有可能にする仕組みを構築。
 - ゲームクライアントと連携するための各種APIの設計・実装 
 - Nuxt.js+Vuetifyを使用したフロントエンドUIの設計・実装  
 - 数万件のCSVデータをブラウザ上で表示した際に発生していたフリーズ問題を、スクロール連動の遅延レンダリングにより解消
 
 ### 医療情報管理システムの開発・医療機器操作アプリの改修(2023・2024)
 既存の医療用輸液ポンプを操作・管理するAndroidアプリから医療データをクラウドに集約。医療データの情報管理を実現。    
-**【使用技術】**   
+**【使用技術】**  
 AWS(VPC/ALB/EC2/S3/IAM/SES/CloudWatch/SNS/Route 53/ACM)
-C#(ASP.NET Core | Xamarin Forms | WPF) | PHP(Laravel) | Java | Kotlin | JavaScript | MySQL | Docker | Jenkins
-
+C#(ASP.NET Core | Xamarin Forms | WPF) | PHP(Laravel) | Java | Kotlin | JavaScript | MySQL | Docker | Jenkins  
 **【業務】**
 - AWSの設計/構築、ソフトウェアの設計/実装、DB設計、テスト、ドキュメンテーションなど、ほぼすべての作業を担当  
 - CloudWatch を活用し、標準メトリクス（EC2 の CPU 使用率）およびカスタムメトリクス（メモリ使用率や EBS ボリュームのストレージ使用率）を監視。いずれかの閾値を超過した際に SNS 経由で通知が届く仕組みを構築
